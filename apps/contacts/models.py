@@ -4,8 +4,11 @@ from django.db import models
 class ContactUs(models.Model):
     country = models.CharField(
         max_length=256,
-        verbose_name="72300 Кыргызская Республика",
-        default='72300 Кыргызская Республика'
+        verbose_name="Кыргызская Республика",
+        default='Кыргызская Республика'
+    )
+    some_numbers = models.PositiveIntegerField(
+        verbose_name='720021'
     )
     city = models.CharField(
         max_length=256,
