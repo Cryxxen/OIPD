@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i6or90c&8dbq1@s_*s_)sm*7hmi#ps24na3v!6t)a$#%-(g4ko
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "rest_framework",
+    "django_filters",
+
+    # apps
+    'apps.about_us',
+    'apps.club',
+    'apps.contacts',
+    'apps.games',
+    'apps.libraries',
+    'apps.news',
+    'apps.partners',
+    'apps.projects',
+    'apps.slider',
+    'apps.team',
+    'apps.socials',
 ]
 
 MIDDLEWARE = [
@@ -118,6 +133,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
+
+MEDIA_URL = 'media'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
