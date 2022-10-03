@@ -21,4 +21,4 @@ class Contact(models.Model):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.phone_number} --- {self.street}"
+        return f"{self.meta} --- {self.twitter} --- {self.instagram}"
