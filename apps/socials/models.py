@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Contact(models.Model):
+class Social(models.Model):
     meta = models.URLField(
         verbose_name='Facebook'
     )

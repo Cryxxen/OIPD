@@ -1,3 +1,16 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.socials.models import Social
+
+
+@admin.register(Social)
+class SocialAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'instagram'
+    )
+    search_fields = (
+        'id',
+        'city',
+        'phone_number',
+    )
