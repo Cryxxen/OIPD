@@ -2,6 +2,11 @@ from django.db import models
 
 
 class AboutUs(models.Model):
+    title = models.CharField(
+        verbose_name='Название',
+        max_length=256
+
+    )
     text = models.TextField(
         verbose_name="О нас"
     )

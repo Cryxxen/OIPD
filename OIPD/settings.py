@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'apps.news',
     'apps.partners',
     'apps.projects',
-    'apps.slider',
     'apps.team',
     'apps.socials',
 ]
