@@ -1,12 +1,12 @@
 from rest_framework.routers import DefaultRouter
 
-from apps.libraries.views import LibraryApiViewSet
+from apps.categories.views import CategoryApiViewSet
 
 
 router = DefaultRouter()
 router.register(
     prefix='',
-    viewset=LibraryApiViewSet
+    viewset=CategoryApiViewSet
 )
 
 urlpatterns = router.urls

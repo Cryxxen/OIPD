@@ -7,4 +7,5 @@ router.register(
     prefix='',
     viewset=SocialApiViewSet
 )
+
 urlpatterns = router.urls

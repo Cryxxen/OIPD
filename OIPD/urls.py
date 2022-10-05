@@ -20,18 +20,20 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('contacts/', include('apps.contacts.urls')),
-    path('socials/', include('apps.socials.urls')),
-    path('news/', include('apps.news.urls')),
-    path('library/', include('apps.libraries.urls')),
-    path('about_us/', include('apps.about_us.urls')),
+    path('api/admin/', admin.site.urls),
+    path('api/contacts/', include('apps.contacts.urls')),
+    path('api/socials/', include('apps.socials.urls')),
+    path('api/news/', include('apps.news.urls')),
+    path('api/library/', include('apps.libraries.urls')),
+    path('api/about_us/', include('apps.about_us.urls')),
+    path('api/partners/', include('apps.partners.urls')),
+    path('api/categories/', include('apps.categories.urls')),
 
 
     # docs
-    path('swagger/download/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('api/swagger/download/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 
 
