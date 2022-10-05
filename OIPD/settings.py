@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     "rest_framework",
     'drf_yasg',
+    'mptt',
+
     # apps
     'apps.about_us',
     'apps.club',
