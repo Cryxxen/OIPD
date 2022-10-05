@@ -7,10 +7,10 @@ from apps.socials.models import Social
 class SocialAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'instagram'
+        'title'
     )
     search_fields = (
         'id',
-        'city',
-        'phone_number',
+        'link',
+        'title',
     )

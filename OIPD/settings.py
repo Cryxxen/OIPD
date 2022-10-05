@@ -35,9 +35,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "rest_framework",
     "django_filters",
 
+
+    "rest_framework",
+    'drf_yasg',
     # apps
     'apps.about_us',
     'apps.club',
