@@ -2,17 +2,15 @@ from django.db import models
 
 
 class Social(models.Model):
-    meta = models.URLField(
+    icon = models.ImageField(
         verbose_name='Facebook'
     )
-    twitter = models.URLField(
+    link = models.URLField(
         verbose_name='Twitter'
     )
-    instagram = models.URLField(
+    title = models.CharField(
+        max_length=256,
         verbose_name='Instagram'
-    )
-    youtube = models.URLField(
-        verbose_name='Youtube'
     )
 
     class Meta:
@@ -21,4 +19,4 @@ class Social(models.Model):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.meta} --- {self.twitter} --- {self.instagram}"
+        return f"{self.title}"
