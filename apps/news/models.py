@@ -3,8 +3,8 @@ from django.db import models
 
 class New(models.Model):
     class LanguageChoice(models.TextChoices):
-        EN = 'english'
-        RU = 'russian'
+        ENGLISH = 'english'
+        RUSSIAN = 'russian'
 
     language = models.CharField(
         max_length=256,
@@ -26,8 +26,8 @@ class New(models.Model):
     )
 
     class Meta:
-        verbose_name = "New"
-        verbose_name_plural = 'News'
+        verbose_name = "Новость"
+        verbose_name_plural = 'Новости'
         ordering = ("-id",)
 
     def __str__(self):
