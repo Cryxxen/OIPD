@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Library(models.Model):
-    image = models.ImageField(
+    image = models.FileField(
         verbose_name='Обложка'
     )
     title = models.CharField(
