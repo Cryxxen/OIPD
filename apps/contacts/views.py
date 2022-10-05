@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from apps.contacts.models import ContactUs
+from apps.contacts.serailizer import ContactUsSerializer
+
+
+class ContactUsApiViewSet(viewsets.ModelViewSet):
+    queryset = ContactUs.objects.all()
+    serializer_class = ContactUsSerializer

@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from apps.partners.models import Partner
+from apps.partners.serializers import PartnerSerializer
+
+
+class PartnerApiViewSet(viewsets.ModelViewSet):
+    queryset = Partner.objects.all()
+    serializer_class = PartnerSerializer
