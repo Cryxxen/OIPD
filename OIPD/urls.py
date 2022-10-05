@@ -21,9 +21,11 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact_us/', include('apps.contacts.urls')),
+    path('contacts/', include('apps.contacts.urls')),
     path('socials/', include('apps.socials.urls')),
     path('news/', include('apps.news.urls')),
+    path('library/', include('apps.libraries.urls')),
+    path('about_us/', include('apps.about_us.urls')),
 
 
     # docs
