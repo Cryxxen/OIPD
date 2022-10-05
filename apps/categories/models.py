@@ -5,6 +5,15 @@ from apps.categories.managers import CategoryManager
 
 
 class Category(MPTTModel):
+    class LanguageChoice(models.TextChoices):
+        ENGLISH = 'english'
+        RUSSIAN = 'russian'
+
+    language = models.CharField(
+        max_length=256,
+        choices=LanguageChoice.choices
+    )
+
     title = models.CharField(
         max_length=256,
         verbose_name='Название',
@@ -21,8 +30,8 @@ class Category(MPTTModel):
     objects = CategoryManager()
 
     class Meta:
-        verbose_name = 'Navbar'
-        verbose_name_plural = 'Navbar'
+        verbose_name = 'Разделы'
+        verbose_name_plural = 'Раздел'
         ordering = ("ordering",)
 
     def __str__(self):

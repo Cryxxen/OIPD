@@ -4,8 +4,13 @@ from apps.news.serializers import NewSerializer, NewImageSerializer
 from apps.news.models import New, NewImage
 
 
-class NewApiViewSet(viewsets.ModelViewSet):
-    queryset = New.objects.all()
+class EnglishNewApiViewSet(viewsets.ModelViewSet):
+    queryset = New.objects.filter(language='english').all()
+    serializer_class = NewSerializer
+
+
+class RussianNewApiViewSet(viewsets.ModelViewSet):
+    queryset = New.objects.filter(language='russian').all()
     serializer_class = NewSerializer
 
 

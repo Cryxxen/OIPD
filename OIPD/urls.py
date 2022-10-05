@@ -8,7 +8,7 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Gold API",
+        title="OIPD API",
         default_version='',
         description="Test description",
         terms_of_service="https://www.google.com/policies/terms/",
@@ -20,7 +20,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('api/admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/contacts/', include('apps.contacts.urls')),
     path('api/socials/', include('apps.socials.urls')),
     path('api/news/', include('apps.news.urls')),
@@ -28,6 +28,10 @@ urlpatterns = [
     path('api/about_us/', include('apps.about_us.urls')),
     path('api/partners/', include('apps.partners.urls')),
     path('api/categories/', include('apps.categories.urls')),
+
+    # rest
+
+    path('', include('rest_framework.urls')),
 
 
     # docs

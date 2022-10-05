@@ -1,3 +1,17 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.libraries.models import Library
+
+
+@admin.register(Library)
+class LibraryAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'title',
+        'link',
+    )
+    search_fields = (
+        'id',
+        'title',
+        'link',
+    )
