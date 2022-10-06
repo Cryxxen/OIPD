@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'apps.team',
     'apps.socials',
     'apps.categories',
+    'apps.our_approach',
 ]
 
 MIDDLEWARE = [

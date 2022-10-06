@@ -1,11 +1,26 @@
 from django.db import models
 
+from apps.categories.models import Category
+
 
 class AboutUs(models.Model):
+    class LanguageChoice(models.TextChoices):
+        ENGLISH = 'english'
+        RUSSIAN = 'russian'
+
+    language = models.CharField(
+        max_length=256,
+        choices=LanguageChoice.choices
+    )
     title = models.CharField(
         verbose_name='Название',
         max_length=256
 
+    )
+    subtitle = models.CharField(
+        verbose_name='О нас',
+        default='О нас',
+        max_length=256,
     )
     text = models.TextField(
         verbose_name="О нас"
