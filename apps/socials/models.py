@@ -3,14 +3,14 @@ from django.db import models
 
 class Social(models.Model):
     icon = models.ImageField(
-        verbose_name='Facebook'
+        verbose_name='Логотип'
     )
     link = models.URLField(
-        verbose_name='Twitter'
+        verbose_name='Ссылка'
     )
     title = models.CharField(
         max_length=256,
-        verbose_name='Instagram'
+        verbose_name='Название соц. сети'
     )
 
     class Meta:

@@ -1,7 +1,9 @@
 from django.db import models
 
+from utils.models import BaseModel
 
-class Partner(models.Model):
+
+class Partner(BaseModel):
     logo = models.ImageField(
         verbose_name='Логотип партнера',
     )
@@ -16,4 +18,4 @@ class Partner(models.Model):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.id} --- {self.title}"
+        return f"{self.id} --- {self.language} --- {self.title}"

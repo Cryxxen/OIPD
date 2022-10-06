@@ -2,18 +2,10 @@ from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
 
 from apps.categories.managers import CategoryManager
+from utils.models import BaseModel
 
 
-class Category(MPTTModel):
-    class LanguageChoice(models.TextChoices):
-        ENGLISH = 'english'
-        RUSSIAN = 'russian'
-
-    language = models.CharField(
-        max_length=256,
-        choices=LanguageChoice.choices
-    )
-
+class Category(MPTTModel, BaseModel):
     title = models.CharField(
         max_length=256,
         verbose_name='Название',
@@ -35,4 +27,4 @@ class Category(MPTTModel):
         ordering = ("ordering",)
 
     def __str__(self):
-        return f"{self.id} --- {self.title}"
+        return f"{self.id} --- {self.language} --- {self.title}"

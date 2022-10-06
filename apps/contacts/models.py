@@ -1,7 +1,9 @@
 from django.db import models
 
+from utils.models import BaseModel
 
-class ContactUs(models.Model):
+
+class ContactUs(BaseModel):
     country = models.CharField(
         max_length=256,
         verbose_name="Кыргызская Республика",
@@ -44,4 +46,4 @@ class ContactUs(models.Model):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.street}--{self.phone_number}"
+        return f"{self.id}---{self.language}"
