@@ -19,25 +19,23 @@ schema_view = get_schema_view(
     permission_classes=[permissions.AllowAny],
 )
 
+api_urlpatterns = [
+    path('about_us/', include('apps.about_us.urls')),
+    path('categories/', include('apps.categories.urls')),
+    path('contacts/', include('apps.contacts.urls')),
+    path('library/', include('apps.libraries.urls')),
+    path('news/', include('apps.news.urls')),
+    path('our_approach/', include('apps.our_approach.urls')),
+    path('partners/', include('apps.partners.urls')),
+    path('socials/', include('apps.socials.urls')),
+    path('team/', include('apps.team.urls')),
+]
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/contacts/', include('apps.contacts.urls')),
-    path('api/socials/', include('apps.socials.urls')),
-    path('api/news/', include('apps.news.urls')),
-    path('api/library/', include('apps.libraries.urls')),
-    path('api/about_us/', include('apps.about_us.urls')),
-    path('api/partners/', include('apps.partners.urls')),
-    path('api/categories/', include('apps.categories.urls')),
-    path('api/our_approach/', include('apps.our_approach.urls')),
-    path('api/team/', include('apps.team.urls')),
-
-    # rest
-
-    path('', include('rest_framework.urls')),
-
+    path('api/', include(api_urlpatterns)),
 
     # docs
-    path('api/swagger/download/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
