@@ -4,6 +4,11 @@ from apps.libraries.models import Library
 from apps.libraries.serializers import LibrarySerializer
 
 
-class LibraryApiViewSet(viewsets.ModelViewSet):
-    queryset = Library.objects.all()
+class EnglishLibraryApiViewSet(viewsets.ModelViewSet):
+    queryset = Library.objects.filter(language='english').all()
+    serializer_class = LibrarySerializer
+
+
+class RussianLibraryApiViewSet(viewsets.ModelViewSet):
+    queryset = Library.objects.filter(language='russian').all()
     serializer_class = LibrarySerializer

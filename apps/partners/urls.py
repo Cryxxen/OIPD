@@ -1,11 +1,15 @@
 from rest_framework.routers import DefaultRouter
 
-from apps.partners.views import PartnerApiViewSet
+from apps.partners.views import EnglishPartnerApiViewSet, RussianPartnerApiViewSet
 
 router = DefaultRouter()
 router.register(
-    prefix='',
-    viewset=PartnerApiViewSet
+    prefix='language/en',
+    viewset=EnglishPartnerApiViewSet
+)
+router.register(
+    prefix='language/ru',
+    viewset=RussianPartnerApiViewSet
 )
 
 urlpatterns = router.urls

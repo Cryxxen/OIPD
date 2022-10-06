@@ -5,10 +5,10 @@ from apps.categories.serializers import CategorySerializer
 
 
 class EnglishCategoryApiViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.viewable().filter(language='english')
+    queryset = Category.objects.viewable().filter(language='english').all()
     serializer_class = CategorySerializer
 
 
 class RussianCategoryApiViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.viewable().filter(language='russian')
+    queryset = Category.objects.viewable().filter(language='russian').all()
     serializer_class = CategorySerializer

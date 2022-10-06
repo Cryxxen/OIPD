@@ -1,14 +1,15 @@
 from django.db import models
 
+from apps.categories.models import Category
+from utils.models import BaseModel
 
-class New(models.Model):
-    class LanguageChoice(models.TextChoices):
-        ENGLISH = 'english'
-        RUSSIAN = 'russian'
 
-    language = models.CharField(
-        max_length=256,
-        choices=LanguageChoice.choices
+class New(BaseModel):
+    category = models.ForeignKey(
+        Category,
+        on_delete=models.CASCADE,
+        related_name='about_us',
+        verbose_name='навбар'
     )
     image = models.ImageField(
         verbose_name='Обложка'
@@ -17,12 +18,14 @@ class New(models.Model):
         max_length=256,
         verbose_name='Название'
     )
-    create_at = models.DateField(
-        auto_now_add=True,
-        verbose_name='Дата создания'
-    )
     description = models.TextField(
         verbose_name='Описание'
+    )
+    facebook = models.URLField(
+        verbose_name='Ссылка на пост в фейсбуке'
+    )
+    twitter = models.URLField(
+        verbose_name='Ссылка на пост в твиттере'
     )
 
     class Meta:

@@ -5,11 +5,11 @@ from apps.categories.views import EnglishCategoryApiViewSet, RussianCategoryApiV
 
 router = DefaultRouter()
 router.register(
-    prefix='en',
+    prefix='language/en',
     viewset=EnglishCategoryApiViewSet
 )
 router.register(
-    prefix='ru',
+    prefix='language/ru',
     viewset=RussianCategoryApiViewSet
 )
 

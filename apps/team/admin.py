@@ -1,3 +1,22 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.team.models import Team
+
+
+@admin.register(Team)
+class TeamAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'language',
+        'fullname'
+    )
+    list_filter = (
+        'id',
+        'language',
+        'fullname',
+    )
+    search_fields = (
+        'id',
+        'language',
+        'fullname',
+    )

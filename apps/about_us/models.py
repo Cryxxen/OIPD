@@ -1,11 +1,17 @@
 from django.db import models
 
+from utils.models import BaseModel
 
-class AboutUs(models.Model):
+
+class AboutUs(BaseModel):
     title = models.CharField(
         verbose_name='Название',
         max_length=256
-
+    )
+    subtitle = models.CharField(
+        verbose_name='О нас',
+        default='О нас',
+        max_length=256,
     )
     text = models.TextField(
         verbose_name="О нас"
