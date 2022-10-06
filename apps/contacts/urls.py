@@ -1,12 +1,16 @@
 from rest_framework.routers import DefaultRouter
 
-from apps.contacts.views import ContactUsApiViewSet
+from apps.contacts.views import EnglishContactUsApiViewSet, RussianContactUsApiViewSet
 
 
 router = DefaultRouter()
 router.register(
-    prefix='',
-    viewset=ContactUsApiViewSet
+    prefix='language/en',
+    viewset=EnglishContactUsApiViewSet
+)
+router.register(
+    prefix='language/ru',
+    viewset=RussianContactUsApiViewSet
 )
 
 urlpatterns = router.urls

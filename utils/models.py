@@ -17,6 +17,7 @@ class BaseModel(models.Model):
     )
 
     class Meta:
+        abstract = True
         ordering = ("-id",)
 
     def __str__(self):

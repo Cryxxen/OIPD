@@ -4,11 +4,11 @@ from apps.team.views import EnglishTeamApiViewSet, RussianTeamApiViewSet
 
 router = DefaultRouter()
 router.register(
-    prefix='en',
+    prefix='language/en',
     viewset=EnglishTeamApiViewSet
 )
 router.register(
-    prefix='ru',
+    prefix='language/ru',
     viewset=RussianTeamApiViewSet
 )
 
