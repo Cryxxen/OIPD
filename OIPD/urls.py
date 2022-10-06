@@ -29,6 +29,7 @@ urlpatterns = [
     path('api/partners/', include('apps.partners.urls')),
     path('api/categories/', include('apps.categories.urls')),
     path('api/our_approach/', include('apps.our_approach.urls')),
+    path('api/team/', include('apps.team.urls')),
 
     # rest
 
