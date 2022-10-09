@@ -8,6 +8,8 @@ class OurApproachAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'language',
+        'text',
+        'image',
     )
     search_fields = (
         'id',

@@ -7,6 +7,7 @@ from apps.partners.models import Partner
 class PartnerAdmin(admin.ModelAdmin):
     list_display = (
         'id',
+        'language',
         'title'
     )
     search_fields = (
