@@ -10,7 +10,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'language',
         'ordering',
         'title',
-        'parent',
+        'is_active',
     )
     search_fields = (
         'id',

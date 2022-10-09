@@ -26,5 +26,9 @@ class AboutUs(BaseModel):
     def save(self, *args, **kwargs):
         if AboutUs.objects.all().count() == 4:
             return None
+        elif AboutUs.objects.filter(language='russian').count() == 2 and self.language == 'russian':
+            return None
+        elif AboutUs.objects.filter(language='english').count() == 2 and self.language == 'english':
+            return None
         else:
             super().save(*args, **kwargs)

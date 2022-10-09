@@ -1,7 +1,9 @@
 from django.db import models
 
+from utils.models import BaseModel
 
-class Project(models.Model):
+
+class Project(BaseModel):
     title = models.CharField(
         max_length=256,
         verbose_name='Название'
@@ -20,3 +22,11 @@ class Project(models.Model):
     facebook_link = models.URLField(
         verbose_name='Ссылка на фейсбук пост'
     )
+
+    class Meta:
+        verbose_name = 'Проект'
+        verbose_name_plural = 'Проекты'
+        ordering = ("-id",)
+
+    def __str__(self):
+        return f"{self.id} --- {self.language} --- {self.title}"
