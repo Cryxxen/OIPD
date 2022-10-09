@@ -47,3 +47,13 @@ class ContactUs(BaseModel):
 
     def __str__(self):
         return f"{self.id}---{self.language}"
+
+    def save(self, *args, **kwargs):
+        if ContactUs.objects.all().count() >= 2:
+            return None
+        elif ContactUs.objects.filter(language='english').count() >= 1 and self.language == 'english':
+            return "Don't"
+        elif ContactUs.objects.filter(language='russian').count() >= 1 and self.language == 'russian':
+            return None
+        else:
+            super().save(*args, **kwargs)

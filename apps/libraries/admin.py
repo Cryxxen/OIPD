@@ -7,6 +7,7 @@ from apps.libraries.models import Library
 class LibraryAdmin(admin.ModelAdmin):
     list_display = (
         'id',
+        'language',
         'title',
         'link',
     )
@@ -14,4 +15,8 @@ class LibraryAdmin(admin.ModelAdmin):
         'id',
         'title',
         'link',
+    )
+    list_filter = (
+        'id',
+        'language',
     )

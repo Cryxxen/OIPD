@@ -6,6 +6,10 @@ from utils.models import BaseModel
 
 
 class Category(MPTTModel, BaseModel):
+    is_active = models.BooleanField(
+        default=True,
+        verbose_name='Показывать на сайте или нет'
+    )
     title = models.CharField(
         max_length=256,
         verbose_name='Название',

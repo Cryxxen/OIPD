@@ -4,7 +4,6 @@ from utils.models import BaseModel
 
 
 class OurApproach(BaseModel):
-
     image = models.ImageField(
         verbose_name='Обложка'
     )
