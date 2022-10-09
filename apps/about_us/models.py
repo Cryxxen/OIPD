@@ -8,16 +8,11 @@ class AboutUs(BaseModel):
         verbose_name='Название',
         max_length=256
     )
-    subtitle = models.CharField(
-        verbose_name='О нас',
-        default='О нас',
-        max_length=256,
+    image = models.ImageField(
+        verbose_name="Картинка"
     )
     text = models.TextField(
         verbose_name="О нас"
-    )
-    image = models.ImageField(
-        verbose_name="Картинка"
     )
 
     class Meta:
@@ -27,3 +22,9 @@ class AboutUs(BaseModel):
 
     def __str__(self):
         return f"{self.id}"
+
+    def save(self, *args, **kwargs):
+        if AboutUs.objects.all().count() == 4:
+            return None
+        else:
+            super().save(*args, **kwargs)

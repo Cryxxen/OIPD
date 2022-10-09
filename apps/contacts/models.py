@@ -47,3 +47,9 @@ class ContactUs(BaseModel):
 
     def __str__(self):
         return f"{self.id}---{self.language}"
+
+    def save(self, *args, **kwargs):
+        if ContactUs.objects.all().count() >= 1:
+            return None
+        else:
+            super().save(*args, **kwargs)

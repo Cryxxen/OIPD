@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from apps.news.serializers import NewSerializer, NewImageSerializer
-from apps.news.models import New, NewImage
+from apps.news.serializers import NewSerializer
+from apps.news.models import New
 
 
 class EnglishNewApiViewSet(viewsets.ModelViewSet):
@@ -12,8 +12,3 @@ class EnglishNewApiViewSet(viewsets.ModelViewSet):
 class RussianNewApiViewSet(viewsets.ModelViewSet):
     queryset = New.objects.filter(language='russian').all()
     serializer_class = NewSerializer
-
-
-class NewImageApiViewSet(viewsets.ModelViewSet):
-    queryset = NewImage.objects.all()
-    serializer_class = NewImageSerializer

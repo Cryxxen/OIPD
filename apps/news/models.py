@@ -1,16 +1,9 @@
 from django.db import models
 
-from apps.categories.models import Category
 from utils.models import BaseModel
 
 
 class New(BaseModel):
-    category = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE,
-        related_name='about_us',
-        verbose_name='навбар'
-    )
     image = models.ImageField(
         verbose_name='Обложка'
     )
@@ -37,21 +30,21 @@ class New(BaseModel):
         return f"{self.language}---{self.title}"
 
 
-class NewImage(models.Model):
-    new = models.ForeignKey(
-        New,
-        related_name='images',
-        verbose_name='новость',
-        on_delete=models.CASCADE,
-    )
-    image = models.ImageField(
-        verbose_name='Изображение'
-    )
-
-    class Meta:
-        verbose_name = 'New Image'
-        verbose_name_plural = 'New Images'
-        ordering = ('-id',)
-
-    def __str__(self):
-        return f"{self.new.title}"
+# class NewImage(models.Model):
+#     new = models.ForeignKey(
+#         New,
+#         related_name='images',
+#         verbose_name='новость',
+#         on_delete=models.CASCADE,
+#     )
+#     image = models.ImageField(
+#         verbose_name='Изображение'
+#     )
+#
+#     class Meta:
+#         verbose_name = 'New Image'
+#         verbose_name_plural = 'New Images'
+#         ordering = ('-id',)
+#
+#     def __str__(self):
+#         return f"{self.new.title}"
