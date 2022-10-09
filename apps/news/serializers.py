@@ -7,11 +7,4 @@ class NewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = New
-        fields = (
-            "id",
-            "language",
-            "image",
-            "title",
-            "create_at",
-            "description",
-        )
+        fields = "__all__"
