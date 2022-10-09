@@ -7,7 +7,9 @@ from apps.socials.models import Social
 class SocialAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'title'
+        'title',
+        'icon',
+        'link'
     )
     search_fields = (
         'id',

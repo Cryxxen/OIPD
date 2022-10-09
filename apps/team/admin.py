@@ -8,7 +8,8 @@ class TeamAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'language',
-        'fullname'
+        'fullname',
+        'image'
     )
     list_filter = (
         'id',
