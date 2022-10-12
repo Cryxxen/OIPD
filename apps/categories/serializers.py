@@ -17,7 +17,9 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'language',
+            'is_active',
             'title',
-            'subcategory',
+            'parent',
             'ordering',
+            'subcategory',
         )

@@ -10,7 +10,7 @@ class ContactUs(BaseModel):
         default='Кыргызская Республика'
     )
     some_numbers = models.PositiveIntegerField(
-        verbose_name='720021'
+        verbose_name='какой-то код похожий на 720021'
     )
     city = models.CharField(
         max_length=256,
