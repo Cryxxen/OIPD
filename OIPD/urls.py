@@ -30,6 +30,8 @@ api_urlpatterns = [
     path('projects/', include('apps.projects.urls')),
     path('socials/', include('apps.socials.urls')),
     path('team/', include('apps.team.urls')),
+    path('clubs/', include('apps.club.urls')),
+
 ]
 
 urlpatterns = [
