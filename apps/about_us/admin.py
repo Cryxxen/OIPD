@@ -8,11 +8,9 @@ class AboutUsAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'language',
-        'title',
         'image',
     )
     search_fields = (
         'id',
-        'title',
         'text'
     )

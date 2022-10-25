@@ -4,33 +4,10 @@ from utils.models import BaseModel
 
 
 class ContactUs(BaseModel):
-    country = models.CharField(
+    adsress = models.CharField(
         max_length=256,
-        verbose_name="Кыргызская Республика",
-        default='Кыргызская Республика'
-    )
-    some_numbers = models.PositiveIntegerField(
-        verbose_name='какой-то код похожий на 720021'
-    )
-    city = models.CharField(
-        max_length=256,
-        verbose_name='Город',
-        default='г.'
-    )
-    street = models.CharField(
-        max_length=256,
-        verbose_name='Улица',
-    )
-    town = models.CharField(
-        max_length=256,
-        verbose_name='Здание'
-    )
-    at_foot = models.PositiveSmallIntegerField(
-        verbose_name='Этаж'
-    )
-    entrance = models.CharField(
-        max_length=256,
-        verbose_name='Вход со стороны?'
+        verbose_name='Адрес',
+        default="21/2 Tokombaev str, Bishkek 720000, Kyrgyzstan"
     )
     phone_number = models.CharField(
         max_length=13,

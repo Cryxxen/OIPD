@@ -4,10 +4,6 @@ from utils.models import BaseModel
 
 
 class AboutUs(BaseModel):
-    title = models.CharField(
-        verbose_name='Название',
-        max_length=256
-    )
     image = models.ImageField(
         verbose_name="Картинка"
     )
