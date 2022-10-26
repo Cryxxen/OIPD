@@ -1,15 +1,11 @@
-from rest_framework import viewsets
+from rest_framework import generics
 
 from apps.contacts.models import ContactUs
 from apps.contacts.serailizer import ContactUsSerializer
 
 
-class EnglishContactUsApiViewSet(viewsets.ModelViewSet):
-    queryset = ContactUs.objects.filter(language='english').all()
+class ContactUsApiView(generics.ListAPIView):
+    queryset = ContactUs.objects.all()
     serializer_class = ContactUsSerializer
 
-
-class RussianContactUsApiViewSet(viewsets.ModelViewSet):
-    queryset = ContactUs.objects.filter(language='russian').all()
-    serializer_class = ContactUsSerializer
 

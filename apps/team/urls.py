@@ -1,16 +1,8 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.team.views import EnglishTeamApiViewSet, RussianTeamApiViewSet
+from apps.team.views import RetrieveTeam, ListTeam
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishTeamApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianTeamApiViewSet
-)
-
-urlpatterns = router.urls
-
+urlpatterns = [
+    path("", ListTeam.as_view()),
+    path("<id>", RetrieveTeam.as_view())
+]

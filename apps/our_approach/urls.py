@@ -1,15 +1,8 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.our_approach.views import EnglishOurApproachApiViewSet, RussianOurApproachApiViewSet
+from apps.our_approach.views import ListAPIView, RetrieveAPIView
 
-router = DefaultRouter()
-router.register(
-    prefix='en',
-    viewset=EnglishOurApproachApiViewSet
-)
-router.register(
-    prefix='ru',
-    viewset=RussianOurApproachApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", ListAPIView.as_view()),
+    path("<id>", RetrieveAPIView.as_view())
+]

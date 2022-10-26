@@ -1,16 +1,11 @@
 from django.db import models
 
+from utils.models import BaseModel
 
-class AboutUs(models.Model):
-    image = models.ImageField(
-        verbose_name="Картинка | Image"
-    )
-    text_ru = models.TextField(
-        verbose_name="О нас"
-    )
-    text_en = models.TextField(
-        verbose_name="about us"
-    )
+
+class AboutUs(BaseModel):
+    title_ru = None
+    title_en = None
 
     class Meta:
         verbose_name = "О нас"

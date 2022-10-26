@@ -1,34 +1,18 @@
 from django.db import models
-from mptt.models import MPTTModel, TreeForeignKey
 
-from apps.categories.managers import CategoryManager
 from utils.models import BaseModel
 
 
-class Category(MPTTModel):
+class Category(BaseModel):
     is_active = models.BooleanField(
         default=True,
         verbose_name='Показывать на сайте или нет'
     )
-    title_ru = models.CharField(
-        max_length=256,
-        verbose_name='Название',
-        unique=True
-    )
-    title_en = models.CharField(
-        max_length=256,
-        verbose_name='title',
-        unique=True
-    )
-    parent = TreeForeignKey(
-        "self",
-        on_delete=models.CASCADE,
-        related_name='subcategory',
-        blank=True, null=True
-    )
     ordering = models.PositiveSmallIntegerField()
 
-    objects = CategoryManager()
+    description_en = None
+    description_ru = None
+    image = None
 
     class Meta:
         verbose_name = 'Разделы'

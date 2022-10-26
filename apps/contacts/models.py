@@ -3,15 +3,15 @@ from django.db import models
 from utils.models import BaseModel
 
 
-class ContactUs(BaseModel):
-    adsress = models.CharField(
+class ContactUs(models.Model):
+    address = models.CharField(
         max_length=256,
         verbose_name='Адрес',
         default="21/2 Tokombaev str, Bishkek 720000, Kyrgyzstan"
     )
     phone_number = models.CharField(
         max_length=13,
-        verbose_name='Тел'
+        verbose_name='phone number'
     )
     email = models.EmailField(
         verbose_name='email'
@@ -23,14 +23,10 @@ class ContactUs(BaseModel):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.id}---{self.language}"
+        return f"{self.id}"
 
     def save(self, *args, **kwargs):
-        if ContactUs.objects.all().count() >= 2:
-            return None
-        elif ContactUs.objects.filter(language='english').count() >= 1 and self.language == 'english':
-            return "Don't"
-        elif ContactUs.objects.filter(language='russian').count() >= 1 and self.language == 'russian':
-            return None
-        else:
+        if ContactUs.objects.all() < 1:
             super().save(*args, **kwargs)
+        else:
+            return None

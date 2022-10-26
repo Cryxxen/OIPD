@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.team.models import Team
 from apps.team.serializers import TeamSerializer
 
 
-class EnglishTeamApiViewSet(viewsets.ModelViewSet):
-    queryset = Team.objects.filter(language='english').all()
+class RetrieveTeam(RetrieveAPIView):
+    queryset = Team.objects.all()
     serializer_class = TeamSerializer
 
 
-class RussianTeamApiViewSet(viewsets.ModelViewSet):
-    queryset = Team.objects.filter(language='russian').all()
+class ListTeam(ListAPIView):
+    queryset = Team.objects.all()
     serializer_class = TeamSerializer

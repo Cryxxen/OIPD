@@ -7,19 +7,19 @@ from apps.news.models import New
 class NewAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'title',
+        'title_ru',
+        'title_en',
         'create_at',
     )
     search_fields = (
         'id',
-        'language',
-        'title',
+        'title_ru',
+        'title_en',
         'create_at',
-        'description',
     )
     list_filter = (
         'id',
-        'language',
-        'create_at'
+        'title_ru',
+        'title_en',
+        'create_at',
     )

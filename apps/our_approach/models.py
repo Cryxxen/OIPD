@@ -5,12 +5,11 @@ from utils.models import BaseModel
 
 class OurApproach(BaseModel):
     image = models.ImageField(
-        verbose_name='Обложка'
+        verbose_name='image'
     )
 
-    text = models.TextField(
-        verbose_name='Описание'
-    )
+    title_en = None
+    title_ru = None
 
     class Meta:
         verbose_name = 'Наш подход'
@@ -18,4 +17,4 @@ class OurApproach(BaseModel):
         ordering = ('id',)
 
     def __str__(self):
-        return f"{self.id} --- {self.language} --- {self.text}"
+        return f"{self.id}"

@@ -1,15 +1,8 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.partners.views import EnglishPartnerApiViewSet, RussianPartnerApiViewSet
+from apps.partners.views import RetrievePartner, ListPartner
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishPartnerApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianPartnerApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", ListPartner.as_view()),
+    path("<id>", RetrievePartner.as_view())
+]

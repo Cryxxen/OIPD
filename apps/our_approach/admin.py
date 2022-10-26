@@ -7,17 +7,18 @@ from apps.our_approach.models import OurApproach
 class OurApproachAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'text',
+        'description_ru',
+        'description_en',
         'image',
     )
     search_fields = (
         'id',
-        'language',
-        'text'
+        'description_ru',
+        'description_en',
+        'create_at',
     )
     list_filter = (
         'id',
-        'language',
-        'text',
+        'description_ru',
+        'description_en',
     )

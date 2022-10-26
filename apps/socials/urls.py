@@ -1,11 +1,7 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
+from apps.socials.views import ListSocialApi
 
-from apps.socials.views import SocialApiViewSet
 
-router = DefaultRouter()
-router.register(
-    prefix='',
-    viewset=SocialApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", ListSocialApi.as_view())
+]

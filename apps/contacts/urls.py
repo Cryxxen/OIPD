@@ -1,16 +1,8 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.contacts.views import EnglishContactUsApiViewSet, RussianContactUsApiViewSet
+from apps.contacts.views import ContactUsApiView
 
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishContactUsApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianContactUsApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", ContactUsApiView.as_view())
+]

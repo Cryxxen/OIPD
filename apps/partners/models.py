@@ -5,12 +5,10 @@ from utils.models import BaseModel
 
 class Partner(BaseModel):
     logo = models.ImageField(
-        verbose_name='Логотип партнера',
+        verbose_name='partner\'s logo',
     )
-    title = models.CharField(
-        max_length=256,
-        verbose_name='Название компании'
-    )
+    description_ru = None
+    description_en = None
 
     class Meta:
         verbose_name = 'Партнер'
@@ -18,4 +16,4 @@ class Partner(BaseModel):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.id} --- {self.language} --- {self.title}"
+        return f"{self.id}"

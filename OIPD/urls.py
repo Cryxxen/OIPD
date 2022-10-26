@@ -31,6 +31,7 @@ api_urlpatterns = [
     path('socials/', include('apps.socials.urls')),
     path('team/', include('apps.team.urls')),
     path('clubs/', include('apps.club.urls')),
+    path('games/', include('apps.games.urls')),
 
 ]
 

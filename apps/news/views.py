@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.news.serializers import NewSerializer
 from apps.news.models import New
 
 
-class EnglishNewApiViewSet(viewsets.ModelViewSet):
-    queryset = New.objects.filter(language='english').all()
+class RetrieveNewApiView(RetrieveAPIView):
+    queryset = New.objects.all()
     serializer_class = NewSerializer
 
 
-class RussianNewApiViewSet(viewsets.ModelViewSet):
-    queryset = New.objects.filter(language='russian').all()
+class ListNewApiView(ListAPIView):
+    queryset = New.objects.all()
     serializer_class = NewSerializer

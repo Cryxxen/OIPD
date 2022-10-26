@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.libraries.models import Library
 from apps.libraries.serializers import LibrarySerializer
 
 
-class EnglishLibraryApiViewSet(viewsets.ModelViewSet):
-    queryset = Library.objects.filter(language='english').all()
+class RetrieveLibraryApiView(RetrieveAPIView):
+    queryset = Library.objects.all()
     serializer_class = LibrarySerializer
 
 
-class RussianLibraryApiViewSet(viewsets.ModelViewSet):
-    queryset = Library.objects.filter(language='russian').all()
+class ListLibraryAPiView(ListAPIView):
+    queryset = Library.objects.all()
     serializer_class = LibrarySerializer

@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.partners.models import Partner
 from apps.partners.serializers import PartnerSerializer
 
 
-class EnglishPartnerApiViewSet(viewsets.ModelViewSet):
-    queryset = Partner.objects.filter(language='english').all()
+class RetrievePartner(RetrieveAPIView):
+    queryset = Partner.objects.all()
     serializer_class = PartnerSerializer
 
 
-class RussianPartnerApiViewSet(viewsets.ModelViewSet):
-    queryset = Partner.objects.filter(language='russian').all()
+class ListPartner(ListAPIView):
+    queryset = Partner.objects.all()
     serializer_class = PartnerSerializer

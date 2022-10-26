@@ -1,16 +1,14 @@
 from django.db import models
 
+from utils.models import BaseModel
+
 
 class Social(models.Model):
     icon = models.ImageField(
-        verbose_name='Логотип'
+        verbose_name='logo image'
     )
     link = models.URLField(
-        verbose_name='Ссылка'
-    )
-    title = models.CharField(
-        max_length=256,
-        verbose_name='Название соц. сети'
+        verbose_name='link'
     )
 
     class Meta:
@@ -19,4 +17,4 @@ class Social(models.Model):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.title}"
+        return f"{self.id}"

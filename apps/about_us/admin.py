@@ -7,7 +7,6 @@ from apps.about_us.models import AboutUs
 class AboutUsAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'text_ru',
-        'text_en',
-        'image',
+        'description_ru',
+        'description_en',
     )

@@ -3,23 +3,32 @@ from django.db import models
 from utils.models import BaseModel
 
 
-class Team(BaseModel):
+class Team(models.Model):
     image = models.ImageField(
-        verbose_name='Фотография'
+        verbose_name='image'
     )
-    fullname = models.CharField(
+    fullname_ru = models.CharField(
         max_length=256,
-        verbose_name='ФИО'
+        verbose_name='fullname russian'
     )
-    position = models.CharField(
+    position_ru = models.CharField(
         max_length=256,
-        verbose_name='Должность'
+        verbose_name='position russian'
+    )
+
+    fullname_en = models.CharField(
+        max_length=256,
+        verbose_name="fullname english"
+    )
+    position_en = models.CharField(
+        max_length=256,
+        verbose_name="fullname english"
     )
     email = models.EmailField(
-        verbose_name='Почта'
+        verbose_name='email'
     )
     facebook = models.URLField(
-        verbose_name='Ссылка на профиль(facebook)'
+        verbose_name='link facebook account'
     )
 
     class Meta:
@@ -28,4 +37,4 @@ class Team(BaseModel):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.id} --- {self.language} --- {self.fullname}"
+        return f"{self.id} --- {self.fullname_ru} --- {self.fullname_en}"

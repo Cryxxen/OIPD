@@ -7,17 +7,17 @@ from apps.team.models import Team
 class TeamAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'fullname',
+        'fullname_ru',
+        'fullname_en',
         'image'
     )
     list_filter = (
         'id',
-        'language',
-        'fullname',
+        'fullname_ru',
+        'fullname_en',
     )
     search_fields = (
         'id',
-        'language',
-        'fullname',
+        'fullname_ru',
+        'fullname_en',
     )

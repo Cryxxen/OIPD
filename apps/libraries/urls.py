@@ -1,16 +1,9 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.libraries.views import RussianLibraryApiViewSet, EnglishLibraryApiViewSet
+from apps.libraries.views import RetrieveLibraryApiView, ListLibraryAPiView
 
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishLibraryApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianLibraryApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("<id>", RetrieveLibraryApiView.as_view()),
+    path("", ListLibraryAPiView.as_view())
+]

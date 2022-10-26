@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.projects.serializers import ProjectSerializer
 from apps.projects.models import Project
 
 
-class EnglishProjectApiViewSet(viewsets.ModelViewSet):
-    queryset = Project.objects.filter(language="english").all()
+class RetrieveProject(RetrieveAPIView):
+    queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
 
-class RussianProjectApiViewSet(viewsets.ModelViewSet):
-    queryset = Project.objects.filter(language='russian').all()
+class ListProject(ListAPIView):
+    queryset = Project.objects.all()
     serializer_class = ProjectSerializer

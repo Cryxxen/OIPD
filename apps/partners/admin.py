@@ -7,11 +7,12 @@ from apps.partners.models import Partner
 class PartnerAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'title'
+        'title_ru',
+        'title_en'
     )
     search_fields = (
         'id',
-        'title'
+        'title_en'
+        'title_ru'
     )
 

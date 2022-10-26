@@ -1,7 +1,8 @@
 from django.urls import path
 
-from .views import ClubApiView
+from .views import ListClubApiView, RetrieveClubAPIView
 
 urlpatterns = [
-    path("", ClubApiView.as_view()),
+    path("", ListClubApiView.as_view()),
+    path("<id>", RetrieveClubAPIView.as_view()),
 ]

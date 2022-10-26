@@ -7,6 +7,6 @@ from .models import Club
 class ClubAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'title',
+        'title_ru',
+        'title_en',
     )

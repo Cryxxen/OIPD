@@ -1,16 +1,10 @@
+from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-from apps.projects.views import RussianProjectApiViewSet, EnglishProjectApiViewSet
+from apps.projects.views import ListProject, RetrieveProject
 
 
-router = DefaultRouter()
-router.register(
-    prefix='en',
-    viewset=EnglishProjectApiViewSet
-)
-router.register(
-    prefix='ru',
-    viewset=RussianProjectApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", ListProject.as_view()),
+    path("<id>", RetrieveProject.as_view())
+]

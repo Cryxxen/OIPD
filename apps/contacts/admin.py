@@ -7,17 +7,7 @@ from apps.contacts.models import ContactUs
 class ContactUsAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
+        'address',
         'email',
         'phone_number'
-    )
-    list_filter = (
-        'id',
-        'phone_number',
-        'email',
-    )
-    search_fields = (
-        'id',
-        'city',
-        'phone_number',
     )

@@ -7,16 +7,18 @@ from apps.libraries.models import Library
 class LibraryAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
-        'title',
+        'title_ru',
+        'title_en',
         'link',
     )
     search_fields = (
         'id',
-        'title',
+        'title_ru',
+        'title_en',
         'link',
     )
     list_filter = (
         'id',
-        'language',
+        "title_en",
+        "title_ru",
     )

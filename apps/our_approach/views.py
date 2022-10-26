@@ -1,14 +1,14 @@
-from rest_framework import viewsets
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from apps.our_approach.models import OurApproach
 from apps.our_approach.serializers import OurApproachSerializer
 
 
-class EnglishOurApproachApiViewSet(viewsets.ModelViewSet):
-    queryset = OurApproach.objects.filter(language='english').all()
+class ListOurApproach(ListAPIView):
+    queryset = OurApproach.objects.all()
     serializer_class = OurApproachSerializer
 
 
-class RussianOurApproachApiViewSet(viewsets.ModelViewSet):
-    queryset = OurApproach.objects.filter(language='russian').all()
+class RetrieveOurApproach(RetrieveAPIView):
+    queryset = OurApproach.objects.all()
     serializer_class = OurApproachSerializer
