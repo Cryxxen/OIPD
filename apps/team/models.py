@@ -22,7 +22,7 @@ class Team(models.Model):
     )
     position_en = models.CharField(
         max_length=256,
-        verbose_name="fullname english"
+        verbose_name="position english"
     )
     email = models.EmailField(
         verbose_name='email'

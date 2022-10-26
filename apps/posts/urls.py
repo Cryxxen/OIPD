@@ -1,6 +1,6 @@
 from django.urls import path
 
-from apps.games.views import ListGame, RetrieveGame
+from apps.posts.views import ListGame, RetrieveGame
 
 
 urlpatterns = [

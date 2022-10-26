@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from .models import Game
+from .models import Post
 
 
-@admin.register(Game)
+@admin.register(Post)
 class GameAdmin(admin.ModelAdmin):
     list_display = (
         'id',
@@ -14,8 +14,7 @@ class GameAdmin(admin.ModelAdmin):
         'title_ru',
         'title_en',
 
-        'beneficiaries_ru',
-        'beneficiaries_en',
+        'beneficiaries',
 
         'description_ru',
         'description_en',
@@ -37,8 +36,7 @@ class GameAdmin(admin.ModelAdmin):
         'title_ru',
         'title_en',
 
-        'beneficiaries_ru',
-        'beneficiaries_en',
+        'beneficiaries',
 
         'description_ru',
         'description_en',

@@ -3,12 +3,23 @@ from django.db import models
 from utils.models import BaseModel
 
 
-class Game(BaseModel):
-    # russian version 👇
+class Post(BaseModel):
+    class PostTypeChoice(models.TextChoices):
+        simulation_game = "SIMULATION GAME"
+        project = "PROJECT"
+        digital_solution = "DIGITAL SOLUTIONS"
+        trainings = "TRAININGS"
 
-    beneficiaries_ru = models.PositiveSmallIntegerField(
-        verbose_name="beneficiaries russian",
+    post_type = models.CharField(
+        choices=PostTypeChoice.choices,
+        max_length=256
     )
+
+    beneficiaries = models.PositiveSmallIntegerField(
+        verbose_name="beneficiaries english"
+    )
+
+    # russian version 👇
     duration_ru = models.CharField(
         max_length=256,
         verbose_name="duration"
@@ -36,13 +47,10 @@ class Game(BaseModel):
         max_length=256,
         verbose_name="participants english"
     )
-    beneficiaries_en = models.PositiveSmallIntegerField(
-        verbose_name="beneficiaries english"
-    )
 
     class Meta:
-        verbose_name = 'Симуляционная игра'
-        verbose_name_plural = "Симуляционные игры"
+        verbose_name = 'Пост'
+        verbose_name_plural = "Посты"
         ordering = ("-create_at",)
 
     def __str__(self):

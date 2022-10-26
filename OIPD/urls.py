@@ -27,11 +27,10 @@ api_urlpatterns = [
     path('news/', include('apps.news.urls')),
     path('our_approach/', include('apps.our_approach.urls')),
     path('partners/', include('apps.partners.urls')),
-    path('projects/', include('apps.projects.urls')),
     path('socials/', include('apps.socials.urls')),
     path('team/', include('apps.team.urls')),
     path('clubs/', include('apps.club.urls')),
-    path('games/', include('apps.games.urls')),
+    path('posts/', include('apps.posts.urls')),
 
 ]
 

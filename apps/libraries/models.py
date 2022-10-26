@@ -9,6 +9,9 @@ class Library(BaseModel):
         verbose_name='link to google drive'
     )
 
+    description_ru = None
+    description_en = None
+
     class Meta:
         verbose_name = 'Библиотеки'
         verbose_name_plural = 'Библиотека'

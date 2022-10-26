@@ -4,8 +4,8 @@ from utils.models import BaseModel
 
 
 class Partner(BaseModel):
-    logo = models.ImageField(
-        verbose_name='partner\'s logo',
+    link = models.URLField(
+        verbose_name='web-site'
     )
     description_ru = None
     description_en = None

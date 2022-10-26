@@ -1,14 +1,14 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from apps.games.models import Game
-from apps.games.serializers import GameSerializer
+from apps.posts.models import Post
+from apps.posts.serializers import GameSerializer
 
 
 class ListGame(ListAPIView):
-    queryset = Game.objects.all()
+    queryset = Post.objects.all()
     serializer_class = GameSerializer
 
 
 class RetrieveGame(RetrieveAPIView):
-    queryset = Game.objects.all()
+    queryset = Post.objects.all()
     serializer_class = GameSerializer
