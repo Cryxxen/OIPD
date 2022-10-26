@@ -1,14 +1,15 @@
 from django.db import models
 
-from utils.models import BaseModel
 
-
-class AboutUs(BaseModel):
+class AboutUs(models.Model):
     image = models.ImageField(
-        verbose_name="Картинка"
+        verbose_name="Картинка | Image"
     )
-    text = models.TextField(
+    text_ru = models.TextField(
         verbose_name="О нас"
+    )
+    text_en = models.TextField(
+        verbose_name="about us"
     )
 
     class Meta:
@@ -20,11 +21,7 @@ class AboutUs(BaseModel):
         return f"{self.id}"
 
     def save(self, *args, **kwargs):
-        if AboutUs.objects.all().count() == 4:
-            return None
-        elif AboutUs.objects.filter(language='russian').count() == 2 and self.language == 'russian':
-            return None
-        elif AboutUs.objects.filter(language='english').count() == 2 and self.language == 'english':
-            return None
-        else:
+        if AboutUs.objects.all().count() < 1:
             super().save(*args, **kwargs)
+        else:
+            return None

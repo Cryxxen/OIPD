@@ -7,10 +7,7 @@ from apps.about_us.models import AboutUs
 class AboutUsAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
+        'text_ru',
+        'text_en',
         'image',
-    )
-    search_fields = (
-        'id',
-        'text'
     )

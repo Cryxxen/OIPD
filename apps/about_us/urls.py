@@ -1,16 +1,8 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.about_us.views import EnglishAboutUsApiViewSet, RussianAboutUsApiViewSet
+from apps.about_us.views import AboutUsApiView
 
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishAboutUsApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianAboutUsApiViewSet
-)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("", AboutUsApiView.as_view())
+]

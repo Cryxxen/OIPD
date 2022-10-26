@@ -4,13 +4,6 @@ from .models import Club
 from .serializers import ClubSerializer
 
 
-class ClubEnglishApiView(generics.ListAPIView,
-                         generics.RetrieveAPIView):
-    queryset = Club.objects.filter(language='english').all()
-    serializer_class = ClubSerializer
-
-
-class ClubRussianApiView(generics.ListAPIView,
-                         generics.RetrieveAPIView):
-    queryset = Club.objects.filter(language='russian').all()
+class ClubApiView(generics.ListAPIView,):
+    queryset = Club.objects.all()
     serializer_class = ClubSerializer

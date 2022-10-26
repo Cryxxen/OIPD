@@ -1,16 +1,9 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 
-from apps.categories.views import EnglishCategoryApiViewSet, RussianCategoryApiViewSet
+from apps.categories.views import CategoryApiView
 
 
-router = DefaultRouter()
-router.register(
-    prefix='language/en',
-    viewset=EnglishCategoryApiViewSet
-)
-router.register(
-    prefix='language/ru',
-    viewset=RussianCategoryApiViewSet
-)
+urlpatterns = [
+    path("", CategoryApiView.as_view()),
+]
 
-urlpatterns = router.urls

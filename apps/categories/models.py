@@ -5,14 +5,19 @@ from apps.categories.managers import CategoryManager
 from utils.models import BaseModel
 
 
-class Category(MPTTModel, BaseModel):
+class Category(MPTTModel):
     is_active = models.BooleanField(
         default=True,
         verbose_name='Показывать на сайте или нет'
     )
-    title = models.CharField(
+    title_ru = models.CharField(
         max_length=256,
         verbose_name='Название',
+        unique=True
+    )
+    title_en = models.CharField(
+        max_length=256,
+        verbose_name='title',
         unique=True
     )
     parent = TreeForeignKey(
@@ -31,4 +36,4 @@ class Category(MPTTModel, BaseModel):
         ordering = ("ordering",)
 
     def __str__(self):
-        return f"{self.id} --- {self.language} --- {self.title}"
+        return f"{self.id}"

@@ -7,21 +7,22 @@ from apps.categories.models import Category
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'language',
+        'title_ru',
+        'title_en',
         'ordering',
-        'title',
         'is_active',
     )
     search_fields = (
         'id',
-        'language',
+        'title_ru',
+        'title_en',
         'ordering',
-        'title',
-        'parent',
+        'is_active',
     )
     list_filter = (
         'id',
+        'title_ru',
+        'title_en',
         'ordering',
-        'language',
-        'title',
+        'is_active',
     )
