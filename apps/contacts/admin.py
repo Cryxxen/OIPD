@@ -7,7 +7,8 @@ from apps.contacts.models import ContactUs
 class ContactUsAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'address',
+        'address_ru',
+        'address_en',
         'email',
         'phone_number'
     )

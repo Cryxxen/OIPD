@@ -4,10 +4,15 @@ from utils.models import BaseModel
 
 
 class ContactUs(models.Model):
-    address = models.CharField(
+    address_ru = models.CharField(
         max_length=256,
         verbose_name='Адрес',
-        default="21/2 Tokombaev str, Bishkek 720000, Kyrgyzstan"
+        default="Адрес: ул. Токомбаева 21/2, Бишкек 720000, Кыргызстан "
+    )
+    address_en = models.CharField(
+        max_length=256,
+        verbose_name='Адрес',
+        default="Address: 21/2 Tokombaev str, Bishkek 720000, Kyrgyzstan "
     )
     phone_number = models.CharField(
         max_length=13,
