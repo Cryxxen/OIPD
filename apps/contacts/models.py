@@ -31,7 +31,7 @@ class ContactUs(models.Model):
         return f"{self.id}"
 
     def save(self, *args, **kwargs):
-        if ContactUs.objects.all() < 1:
+        if ContactUs.objects.all().count() < 1:
             super().save(*args, **kwargs)
         else:
             return None
