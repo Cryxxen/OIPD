@@ -2,11 +2,11 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from apps.news.views import (
-    ListNewApiView,
-    RetrieveNewApiView
+    RetrieveNewApiViewSet
 )
-
-urlpatterns = [
-    path("", ListNewApiView.as_view()),
-    path("<id>", RetrieveNewApiView.as_view())
-]
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=RetrieveNewApiViewSet
+)
+urlpatterns = router.urls

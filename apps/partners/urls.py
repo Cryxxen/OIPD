@@ -1,8 +1,10 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from apps.partners.views import RetrievePartner, ListPartner
+from apps.partners.views import PartnerApiViewSet
 
-urlpatterns = [
-    path("", ListPartner.as_view()),
-    path("<id>", RetrievePartner.as_view())
-]
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=PartnerApiViewSet
+)
+urlpatterns = router.urls

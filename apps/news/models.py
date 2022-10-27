@@ -17,4 +17,4 @@ class New(BaseModel):
         ordering = ("-id",)
 
     def __str__(self):
-        return f"{self.id}---{self.title}"
+        return f"{self.id}---{self.title_ru }"

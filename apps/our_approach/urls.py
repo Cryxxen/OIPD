@@ -1,8 +1,10 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from apps.our_approach.views import ListAPIView, RetrieveAPIView
+from apps.our_approach.views import OurApproachViewSet
 
-urlpatterns = [
-    path("", ListAPIView.as_view()),
-    path("<id>", RetrieveAPIView.as_view())
-]
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=OurApproachViewSet
+)
+urlpatterns = router.urls

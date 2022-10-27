@@ -1,8 +1,10 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from apps.team.views import RetrieveTeam, ListTeam
+from apps.team.views import TeamApiViewSet
 
-urlpatterns = [
-    path("", ListTeam.as_view()),
-    path("<id>", RetrieveTeam.as_view())
-]
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=TeamApiViewSet
+)
+urlpatterns = router.urls

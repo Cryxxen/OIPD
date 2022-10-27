@@ -1,14 +1,12 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.mixins import RetrieveModelMixin, ListModelMixin
+from rest_framework.viewsets import GenericViewSet
 
 from apps.team.models import Team
 from apps.team.serializers import TeamSerializer
 
 
-class RetrieveTeam(RetrieveAPIView):
-    queryset = Team.objects.all()
-    serializer_class = TeamSerializer
-
-
-class ListTeam(ListAPIView):
+class TeamApiViewSet(RetrieveModelMixin,
+                     ListModelMixin,
+                     GenericViewSet):
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
