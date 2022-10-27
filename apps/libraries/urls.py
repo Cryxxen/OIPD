@@ -1,9 +1,13 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from apps.libraries.views import RetrieveLibraryApiView, ListLibraryAPiView
+from apps.libraries.views import RetrieveLibraryApiViewSet
 
 
-urlpatterns = [
-    path("<id>", RetrieveLibraryApiView.as_view()),
-    path("", ListLibraryAPiView.as_view())
-]
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=RetrieveLibraryApiViewSet,
+)
+
+urlpatterns = router.urls
+
