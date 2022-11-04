@@ -7,6 +7,9 @@ class OurApproach(BaseModel):
     image = models.ImageField(
         verbose_name='image'
     )
+    numbers = models.PositiveIntegerField(
+        verbose_name="projects count"
+    )
 
     title_en = None
     title_ru = None

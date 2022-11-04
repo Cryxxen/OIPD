@@ -7,8 +7,8 @@ class New(BaseModel):
     facebook = models.URLField(
         verbose_name='link facebook'
     )
-    twitter = models.URLField(
-        verbose_name='link to twitter'
+    instagram = models.URLField(
+        verbose_name='link to instagram'
     )
 
     class Meta:
@@ -18,3 +18,5 @@ class New(BaseModel):
 
     def __str__(self):
         return f"{self.id}---{self.title_ru }"
+
+
