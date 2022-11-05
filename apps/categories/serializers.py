@@ -12,4 +12,5 @@ class CategorySerializer(serializers.ModelSerializer):
             'ordering',
             'title_ru',
             'title_en',
+            'route',
         )

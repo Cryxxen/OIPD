@@ -9,6 +9,10 @@ class Category(BaseModel):
         verbose_name='Показывать на сайте или нет'
     )
     ordering = models.PositiveSmallIntegerField()
+    route = models.CharField(
+        max_length=256,
+        verbose_name="endpoint на который должна перекидывать"
+    )
 
     description_en = None
     description_ru = None
