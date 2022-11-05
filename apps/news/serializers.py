@@ -1,9 +1,16 @@
 from rest_framework import serializers
 
-from apps.news.models import New
+from apps.news.models import New, NewSocial
+
+
+class NewSocialSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewSocial
+        fields = "__all__"
 
 
 class NewSerializer(serializers.ModelSerializer):
+    socials = NewSocialSerializer(many=True, read_only=True)
 
     class Meta:
         model = New
