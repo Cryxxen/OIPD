@@ -37,6 +37,7 @@ class Post(BaseModel):
         max_length=256,
         verbose_name="location russian"
     )
+
     participants_ru = models.CharField(
         max_length=256,
         verbose_name="participants russian"
