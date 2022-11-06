@@ -3,7 +3,7 @@ from django.db import models
 
 class BaseModel(models.Model):
     image = models.ImageField(
-        verbose_name='Обложка'
+        verbose_name='background'
     )
     title_ru = models.CharField(
         max_length=256,

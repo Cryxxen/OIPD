@@ -15,6 +15,4 @@ class AboutUs(BaseModel):
 
     def save(self, *args, **kwargs):
         if AboutUs.objects.all().count() < 1:
-            super().save(*args, **kwargs)
-        else:
-            return None
+            return super().save(*args, **kwargs)

@@ -31,6 +31,7 @@ api_urlpatterns = [
     path('team/', include('apps.team.urls')),
     path('clubs/', include('apps.club.urls')),
     path('posts/', include('apps.posts.urls')),
+    path('service/', include('apps.service_texts.urls')),
 
 ]
 

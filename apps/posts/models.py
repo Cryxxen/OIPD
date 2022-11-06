@@ -3,16 +3,25 @@ from django.db import models
 from utils.models import BaseModel
 
 
-class Post(BaseModel):
-    class PostTypeChoice(models.TextChoices):
-        simulation_game = "SIMULATION GAME"
-        project = "PROJECT"
-        digital_solution = "DIGITAL SOLUTIONS"
-        trainings = "TRAININGS"
+class PostType(BaseModel):
+    description_en = None
+    description_ru = None
+    image = None
 
-    post_type = models.CharField(
-        choices=PostTypeChoice.choices,
-        max_length=256
+    def __str__(self):
+        return self.title_ru
+
+    class Meta:
+        verbose_name = "Тип поста"
+        verbose_name_plural = "Типы постов"
+
+
+class Post(BaseModel):
+    post_type = models.ForeignKey(
+        PostType,
+        on_delete=models.CASCADE,
+        related_name="post_type",
+        verbose_name="post type"
     )
 
     beneficiaries = models.PositiveSmallIntegerField(

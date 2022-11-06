@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import Post
+from .models import Post, PostType
 
 
 @admin.register(Post)
-class GameAdmin(admin.ModelAdmin):
+class PostAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         "title_ru",
@@ -51,4 +51,13 @@ class GameAdmin(admin.ModelAdmin):
         'participants_en',
 
         "create_at",
+    )
+
+
+@admin.register(PostType)
+class PostTypeAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'title_ru',
+        'title_en',
     )
