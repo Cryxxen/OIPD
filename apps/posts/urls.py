@@ -1,9 +1,9 @@
 from django.urls import path
 
-from apps.posts.views import ListGame, RetrieveGame
+from apps.posts.views import ListPost, RetrievePost
 
 
 urlpatterns = [
-    path("", ListGame.as_view()),
-    path("<id>", RetrieveGame.as_view())
+    path("", ListPost.as_view()),
+    path("<id>", RetrievePost.as_view())
 ]

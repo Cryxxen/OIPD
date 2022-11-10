@@ -31,7 +31,7 @@ class Post(BaseModel):
     # russian version 👇
     duration_ru = models.CharField(
         max_length=256,
-        verbose_name="duration"
+        verbose_name="duration russian"
     )
     location_ru = models.CharField(
         max_length=256,

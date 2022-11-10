@@ -1,6 +1,7 @@
 from django.db import models
 
 from utils.models import BaseModel
+from utils.validators import phone_validator
 
 
 class ContactUs(models.Model):
@@ -35,3 +36,34 @@ class ContactUs(models.Model):
             super().save(*args, **kwargs)
         else:
             return None
+
+
+class Bid(models.Model):
+    name = models.CharField(
+        max_length=256,
+        verbose_name="name"
+    )
+    surname = models.CharField(
+        max_length=256,
+        verbose_name="surname"
+    )
+    phone_number = models.CharField(
+        max_length=14,
+        verbose_name="phone number",
+        validators=[phone_validator]
+    )
+    description = models.TextField(
+        verbose_name="Description"
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name=""
+    )
+
+    class Meta:
+        verbose_name = "Заявка"
+        verbose_name_plural = "Заявки"
+        ordering = ("-id",)
+
+    def __str__(self):
+        return f"{self.name}--{self.surname}"

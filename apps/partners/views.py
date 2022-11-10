@@ -11,3 +11,4 @@ class PartnerApiViewSet(RetrieveModelMixin,
 
     queryset = Partner.objects.all()
     serializer_class = PartnerSerializer
+    pagination_class = None
