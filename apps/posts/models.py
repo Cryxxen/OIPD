@@ -7,6 +7,10 @@ class PostType(BaseModel):
     description_en = None
     description_ru = None
     image = None
+    value = models.CharField(
+        max_length=256,
+        verbose_name="Значение"
+    )
 
     def __str__(self):
         return self.title_ru
