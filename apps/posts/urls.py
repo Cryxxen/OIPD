@@ -1,10 +1,15 @@
-from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from apps.posts.views import ListPost, RetrievePost, ListPostType
+from apps.posts.views import PostApiViewSet, ListPostType
 
+router = DefaultRouter()
+router.register(
+    prefix="",
+    viewset=PostApiViewSet
+)
+router.register(
+    prefix="types",
+    viewset=ListPostType
+)
 
-urlpatterns = [
-    path("", ListPost.as_view()),
-    path("post/<id>", RetrievePost.as_view()),
-    path("types/", ListPostType.as_view()),
-]
+urlpatterns = router.urls
