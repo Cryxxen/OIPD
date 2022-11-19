@@ -37,7 +37,5 @@ class NewSocial(models.Model):
         return f"{self.id}"
 
     def save(self, *args, **kwargs):
-        if NewSocial.objects.filter(social=self.social, new=self.new).all().count() > 2:
-            return None
-        else:
+        if NewSocial.objects.filter(social=self.social, new=self.new).all().count() < 2:
             return super().save(*args, **kwargs)

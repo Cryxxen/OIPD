@@ -103,3 +103,6 @@ class PostSocial(models.Model):
     def __str__(self):
         return f"{self.id}"
 
+    def save(self, *args, **kwargs):
+        if PostSocial.objects.filter(social=self.social, post_id=self.post.id).count() < 1:
+            return super().save(*args, **kwargs)
