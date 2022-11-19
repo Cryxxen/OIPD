@@ -4,7 +4,7 @@ from apps.posts.views import PostApiViewSet, ListPostType
 
 router = DefaultRouter()
 router.register(
-    prefix="",
+    prefix="posts",
     viewset=PostApiViewSet
 )
 router.register(
