@@ -1,10 +1,18 @@
 from django.contrib import admin
 
-from .models import Post, PostType
+from .models import Post, PostType, PostSocial
+
+
+class PostSocialInline(admin.TabularInline):
+    extra = 2
+    model = PostSocial
 
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
+    inlines = [
+        PostSocialInline
+    ]
     list_display = (
         'id',
         "title_ru",

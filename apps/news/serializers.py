@@ -10,7 +10,7 @@ class NewSocialSerializer(serializers.ModelSerializer):
 
 
 class NewSerializer(serializers.ModelSerializer):
-    socials = NewSocialSerializer(many=True, read_only=True)
+    new_socials = NewSocialSerializer(many=True, read_only=True)
 
     class Meta:
         model = New

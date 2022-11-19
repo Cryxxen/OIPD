@@ -17,7 +17,7 @@ class NewSocial(models.Model):
     new = models.ForeignKey(
         New,
         on_delete=models.CASCADE,
-        related_name="socials"
+        related_name="new_socials"
     )
 
     class SocialTypeChoice(models.TextChoices):

@@ -61,6 +61,14 @@ class Post(BaseModel):
         max_length=256,
         verbose_name="participants english"
     )
+    target_audience = models.CharField(
+        max_length=256,
+        verbose_name="Целевая группа"
+    )
+    project_goals = models.TextField(
+        max_length=256,
+        verbose_name="Цели проекта"
+    )
 
     class Meta:
         verbose_name = 'Пост'
@@ -69,3 +77,29 @@ class Post(BaseModel):
 
     def __str__(self):
         return f"{self.id}--{self.create_at}"
+
+
+class PostSocial(models.Model):
+    post = models.ForeignKey(
+        Post,
+        on_delete=models.CASCADE,
+        related_name="post_socials"
+    )
+
+    class SocialTypeChoice(models.TextChoices):
+        FACEBOOK = "facebook"
+        INSTAGRAM = "instagram"
+        YOUTUBE = "youtube"
+
+    social = models.CharField(
+        max_length=256,
+        choices=SocialTypeChoice.choices,
+        verbose_name="Социальная сеть"
+    )
+    link = models.URLField(
+        verbose_name="ссылка на статью"
+    )
+
+    def __str__(self):
+        return f"{self.id}"
+
