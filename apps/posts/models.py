@@ -61,13 +61,19 @@ class Post(BaseModel):
         max_length=256,
         verbose_name="participants english"
     )
-    target_audience = models.CharField(
+    target_audience_ru = models.CharField(
         max_length=256,
-        verbose_name="Целевая группа"
+        verbose_name="Target audience russian"
     )
-    project_goals = models.TextField(
+    target_audience_en = models.CharField(
         max_length=256,
-        verbose_name="Цели проекта"
+        verbose_name="Target audience english"
+    )
+    project_goals_ru = models.TextField(
+        verbose_name="Project goals russian"
+    )
+    project_goals_en = models.TextField(
+        verbose_name="Project goals english"
     )
 
     class Meta:
