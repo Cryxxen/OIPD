@@ -14,10 +14,7 @@ class ContactUs(models.Model):
         verbose_name='Адрес',
         default="Address: 21/2 Tokombaev str, Bishkek 720000, Kyrgyzstan "
     )
-    phone_number = models.CharField(
-        max_length=13,
-        verbose_name='phone number'
-    )
+
     email = models.EmailField(
         verbose_name='email'
     )
@@ -66,3 +63,16 @@ class Bid(models.Model):
 
     def __str__(self):
         return f"{self.name}--{self.surname}"
+
+
+class PhoneNumber(models.Model):
+    contacts = models.ForeignKey(
+        ContactUs,
+        on_delete=models.CASCADE,
+        related_name="phone_numbers"
+    )
+    phone_number = models.CharField(
+        max_length=13,
+        verbose_name='phone number',
+        validators=[phone_validator]
+    )

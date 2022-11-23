@@ -1,19 +1,13 @@
 from django.db import models
 
+from apps.posts.models import PostType
 from utils.models import BaseModel
 
 
 class ServiceText(BaseModel):
-    class ServiceTypeChoice(models.TextChoices):
-        library = "library"
-        simulation_game = "Simulation game"
-        projects = "Projects"
-        training = "Training"
-        club = "Club"
-
-    type = models.CharField(
-        max_length=256,
-        choices=ServiceTypeChoice.choices,
+    type = models.ForeignKey(
+        PostType,
+        on_delete=models.CASCADE,
         verbose_name="service type"
     )
 

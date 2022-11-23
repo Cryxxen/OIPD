@@ -29,21 +29,25 @@ class Post(BaseModel):
     )
 
     beneficiaries = models.PositiveSmallIntegerField(
+        blank=True, null=True,
         verbose_name="beneficiaries english"
     )
 
     # russian version 👇
     duration_ru = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="duration russian"
     )
     location_ru = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="location russian"
     )
 
     participants_ru = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="participants russian"
     )
 
@@ -51,28 +55,35 @@ class Post(BaseModel):
 
     duration_en = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="duration english"
     )
     location_en = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="location english"
     )
     participants_en = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="participants english"
     )
     target_audience_ru = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="Target audience russian"
     )
     target_audience_en = models.CharField(
         max_length=256,
+        blank=True, null=True,
         verbose_name="Target audience english"
     )
     project_goals_ru = models.TextField(
+        blank=True, null=True,
         verbose_name="Project goals russian"
     )
     project_goals_en = models.TextField(
+        blank=True, null=True,
         verbose_name="Project goals english"
     )
 
