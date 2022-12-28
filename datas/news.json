@@ -1,0 +1,380 @@
+[
+  {
+    "model": "news.new",
+    "pk": 5,
+    "fields": {
+      "image": "news1.jpg",
+      "title_ru": "Клуб мира «Импульс» (Нарын) провел городской дебатный турнир на тему миростроительства",
+      "title_en": "Peace Club \"Impulse\" (Naryn) held a city debate tournament on the topic of peacebuilding",
+      "description_ru": "Участники показали свое умение анализировать информацию и принимать правильное решение, навыки критического мышления, практиковали свои навыки публичных выступлений и конструктивной аргументации. Выигравшие команды были награждены ценными призами. Организаторы отмечают, что Кубок переходящий, поэтому турнир будет регулярным. Проект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "The participants showed their ability to analyze information and make the right decision, critical thinking skills, and practiced their skills of public speaking and constructive argumentation. Winning teams were awarded valuable prizes. The organizers note that the Cup is a transient, so the tournament will be a regular event. The project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 6,
+    "fields": {
+      "image": "news2.jpg",
+      "title_ru": "Выражаем огромную благодарность за теплый прием и гостеприимство!",
+      "title_en": "We would like to express our gratitude",
+      "description_ru": "IPD и представителям клубов мира было очень приятно встретиться с посолом Кыргызстана в ФРГ О.Ч. Текебаевым в Берлине. Мы были рады рассказать о деятельности проекта «Молодые миростроители» и успехах клубов мира в Кыргызстане, а также услышать о роли и достижениях посольства в развитии социально-экономических отношений между нашими странами. Пользуясь случаем, желаем Вам господин Посол и сотрудникам миссии, дальнейших успехов и неиссякаемой энергии в профессиональной деятельности. \r\n\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "We would like to express our gratitude for the warm welcome and hospitality of the Embassy of the Kyrgyz Republic of the Federal Republic of Germany. IPD and representatives of Peace Clubs were very pleased to meet the Ambassador of Kyrgyzstan in the Federal Republic of Germany O.Ch. Tekebayev in Berlin. We were happy to talk about the activities of the Young Peacebuilders Project and the successes of Peace Clubs in Kyrgyzstan and to hear about the role and achievements of the Embassy in the development of socio-economic relations between our countries. We take this opportunity to wish you, Mr. Ambassador, and the mission staff further success and inexhaustible energy in your professional activities.\r\n\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 7,
+    "fields": {
+      "image": "news3.jpg",
+      "title_ru": "Деревья обладают замечательным набором свойств, которые могут помочь уменьшить загрязнение городского воздуха.",
+      "title_en": "Trees have a remarkable set of properties that can help reduce urban air pollution.",
+      "description_ru": "26 октября участники региональной конференции по изменению климата в Центральной Азии «Молодежь за будущее» посадили более 50-ти саженцев деревьев в парке микрорайона «Тунгуч» г. Бишкек. Согласно исследованиям общественного фонда «Инициатива Арча», это один из наиболее экологически уязвимых участков города, где повышается температура воздуха из-за уменьшения количества зеленых насаждений.\r\n\r\nЭко-активистка из Кыргызстана Куннуру Дуйшобекова впервые принимала участие в акции по озеленению и поделилась впечатлениями: «Еще одна из наших практических результативных частей программы конференции – это посадка деревьев, чтобы оставить наш зеленый след в Кыргызстане, в Центральной Азии. Я посадила дерево чинару, это мой первый опыт, и я очень рада, что добавили именно это мероприятие».\r\n\r\nРегиональная конференция прошла в рамках празднования 30-летия установления дипломатических отношений между странами Центральной Азии и Германией.",
+      "description_en": "On October 26, participants of the regional conference on climate change in Central Asia “Youth for the Future” planted more than 50 tree seedlings in the park of the Tunguch microdistrict in Bishkek. According to research by the public foundation Arch Initiative, this is one of the most environmentally vulnerable areas of the city, where the air temperature rises due to a decrease in the number of green spaces.\r\n\r\nEco-activist from Kyrgyzstan Kunnuru Duishobekova took part in the greening campaign for the first time and shared her impressions: “Another of our practical and productive parts of the conference program is planting trees to leave our green footprint in Kyrgyzstan, in Central Asia. I planted a plane tree, this is my first experience, and I am very glad that this event was added.”\r\n\r\nThe regional conference was held as part of the celebration of the 30th anniversary of the establishment of diplomatic relations between the countries of Central Asia and Germany.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 8,
+    "fields": {
+      "image": "news1_ZYr1rTJ.jpg",
+      "title_ru": "По статистике сегодня более миллиона наших граждан находятся в трудовой миграции",
+      "title_en": "According to statistics, today more than a million of our citizens are in labor migration",
+      "description_ru": "С октября этого года в рамках проекта «Молодежь за миграцию без рисков» в 20 локациях Кыргызстана проводятся местные семинары по вопросам безопасной миграции и противодействию торговли людьми с использованием методики симуляционной игры для учащихся 9-х и 11-х классов и для студентов ПТЛ\r\n\r\nСегодня стартовал местный семинар в Жалалабадской области в клубе мира @dilgir_peace_club\r\nПредставляем вашему вниманию самые яркие моменты с семинара",
+      "description_en": "Since October of this year, in the framework of the project \"Youth for risk-free migration\" local workshops on safe migration and contering human trafficking with the use of simulation game methodology for 9th and 11th graders and for vocational school students are beeing held in 20 locations of Kyrgyzstan\r\nThe local workshop has started today in Jalalabad province at the Dilgir Peace Club\r\nHere are the highlights from the workshop.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 9,
+    "fields": {
+      "image": "news4.jpg",
+      "title_ru": "Координаторы клуба мира «Миростроители Куршаб» провели презентацию деятельности своего клуба",
+      "title_en": "Coordinators of the peace club \"Peacebuilders of Kurshab\" made a presentation on the activities of the peace club",
+      "description_ru": "Координаторы клуба мира «Миростроители Куршаб» провели презентацию деятельности своего клуба для учителей школ из 7 районов Ошской области в рамках районного семинара. Они рассказали о целях и задачах клуба, проводимой деятельности, его преимуществах как одной из форм организации внеурочной деятельности, направленной на развитие у школьников актуальных «мягких» навыков. Их деятельность вызвала большой интерес гостей, которые подчеркнули актуальность распространения опыта работы клуба мира и в других школах области",
+      "description_en": "Coordinators of the peace club \"Peacebuilders of Kurshab\" made a presentation on the activities of the peace club for teachers of schools from 7 districts of Osh Province in the framework of the district seminar. They talked about the goals and objectives of the club, the activities conducted, and its advantages as one of the forms of organizing extracurricular activities aimed at developing relevant \"soft\" skills in schoolchildren. Their activities aroused great interest among the guests, who noticed the relevance of disseminating the experience of the peace club to other schools in the region.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 10,
+    "fields": {
+      "image": "Снимок_экрана_20221112_183927.png",
+      "title_ru": "В Бишкеке 24-27 октября 2022 г. прошла региональная конференция",
+      "title_en": "On October 24-27, 2022, Bishkek hosted a regional conference",
+      "description_ru": "В Бишкеке 24-27 октября 2022 г. прошла региональная конференция «Молодежь за будущее: Региональная молодежная конференция по изменению климата в Центральной Азии». В конференции приняли участие более 50 участников из Казахстана, Кыргызстана, Таджикистана, Туркменистана и Узбекистана. Среди участников были молодежные активисты, региональные и международные эксперты, представители неправительственных, региональных и международных организаций. Цель мероприятия – повысить осведомленность о многочисленных рисках, вызванных изменением климата, включая его воздействие на безопасность региона.\r\nПрограмма мероприятия включала несколько форматов: тематические сессии под руководством экспертов, работу в группах, пленарные заседания, тематические имитационные игры, полевые выезды и онлайн-включения. Участники значительно углубили понимание проблематики и улучшили навыки в формулировании стратегической политики в области изменения климата. Практическим итогом конференции стало создание региональной молодежной сети для снижения климатических рисков и разработка молодежного коммюнике Центральной Азии по изменению климата.\r\nРегиональная конференция прошла в рамках празднования 30-летия установления дипломатических отношений между странами Центральной Азии и Германией.",
+      "description_en": "On October 24-27, 2022, a regional conference \"Youth for the Future: Regional Youth Conference on Climate Change in Central Asia\" was held in Bishkek. More than 50 participants from Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Uzbekistan took part in the conference. Participants included youth activists, regional and international experts, representatives of non-governmental, regional and international organizations. The purpose of the event is to raise awareness of the multiple risks posed by climate change, including its impact on the security of the region.\r\nThe program of the event included several formats: thematic sessions led by experts, group work, plenary sessions, thematic simulation games, field trips and online inclusions. Participants significantly increased their understanding of the issue and improved their skills in formulating strategic climate change policies. The practical outcome of the conference was the creation of a regional youth network to reduce climate risks and the development of a youth communiqué of Central Asia on climate change.\r\nThe regional conference was held as part of the celebration of the 30th anniversary of the establishment of diplomatic relations between the countries of Central Asia and Germany.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 11,
+    "fields": {
+      "image": "news5.jpg",
+      "title_ru": "Интерес к новым интерактивным формам обучения, которые применяют наши клубы мира, растет и среди других школ.",
+      "title_en": "Interest in the new interactive forms of learning used by our peace clubs is growing among other schools as well.",
+      "description_ru": "Интерес к новым интерактивным формам обучения, которые применяют наши клубы мира, растет и среди других школ. Так, для распространения опыта применения Симуляционный игры, для развития “гибких” навыков, координаторы клуба мира “Прогресс” (Нарын) провели двух-дневный семинар для завучей-организаторов и молодых классных руководителей школ г. Нарын.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "Interest in the new interactive forms of learning used by our peace clubs is growing among other schools as well. The coordinators of the Progress Peace Club (Naryn) held a two-day seminar for teachers of Naryn schools to disseminate the experience of using the Simulation Game to develop students' soft skills.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 12,
+    "fields": {
+      "image": "Снимок_экрана_20221112_184628.png",
+      "title_ru": "Дорогие друзья, в самом разгаре наша региональная конференция по изменению климата в Центральной Азии: «Молодежь за будущее».",
+      "title_en": "Dear friends, our regional conference on climate change in Central Asia: \"Youth for the Future\" is in full swing.",
+      "description_ru": "Дорогие друзья, в самом разгаре наша региональная конференция по изменению климата в Центральной Азии: «Молодежь за будущее». Вчера наш директор Улугбек Нурумбетов и его коллега Катерина Павлова, старший координатор проекта CRISP (Берлин) провели симуляционную игру «Тара – региональное сотрудничество молодежи».\r\nТара – это вымышленный регион, состоящий из трех развивающихся стран, испытывающих комплекс проблем. Высокий уровень разочарования среди молодежи обусловлен страхом перед экологическим коллапсом и климатическим кризисом. Также молодежь страдает от ограниченных возможностей для экономического, социального и политического участия. Как следтвие, большая часть молодежи региона активно ищет возможности уехать за рубеж и не связывает свое будущее с родными странами.\r\nУчастники нашей Бишкекской конференции на один день стали гражданами, экспертами и представителями правительств и гражданского общества региона Тары и попытались найти решения, чтобы помочь региону с его проблемами.\r\nИгра и методика пришлась очень по душе участникам, и они выразили огромную благодарность за очень полезный и необходимый опыт в решении важных вопросов регионального и глобального значения.",
+      "description_en": "Dear friends, our regional conference on climate change in Central Asia: \"Youth for the Future\" is in full swing. Yesterday our director Ulugbek Nurumbetov and his colleague Katerina Pavlova, senior coordinator of the CRISP project (Berlin) held a simulation game \"Tara - regional youth cooperation\".\r\nTara is a fictional region consisting of three developing countries experiencing a complex of problems. The high level of frustration among young people is due to the fear of ecological collapse and the climate crisis. Youth also suffer from limited opportunities for economic, social and political participation. As a result, most of the youth in the region are actively looking for opportunities to go abroad and do not link their future with their native countries.\r\nThe participants of our Bishkek conference became citizens, experts and representatives of the governments and civil society of the Tara region for one day and tried to find solutions to help the region with its problems.\r\nThe participants liked the game and the methodology very much, and they expressed their deep gratitude for the very useful and necessary experience in solving important issues of regional and global importance.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 13,
+    "fields": {
+      "image": "news6.jpg",
+      "title_ru": "Назарбаев Университет в гостях у IPD",
+      "title_en": "Nazarbayev University visited IPD",
+      "description_ru": "У нас побывали представители Назарбаев Университета (НУ). НУ – это международный англоязычный исследовательский университет, расположенный в г. Астана, в столице Республики Казахстан. Выпускники получают дипломы мирового уровня в области наук о Земле, цифровых наук, государственного управления, образования, инженерии, медицины и т.д.\r\nУниверситет приглашает граждан Кыргызстана подавать заявки на бесплатное обучение по программам бакалавриата, магистратуры и докторантуры. Заявки уже принимаются. Спешите! Подробности на сайте nu.edu.kz",
+      "description_en": "We were visited by representatives of Nazarbayev University (NU). NU is an international English-language research university located in Astana, the capital of the Republic of Kazakhstan. Graduates receive world-class degrees in earth sciences, digital sciences, public administration, education, engineering, medicine, etc.\r\nThe university invites citizens of Kyrgyzstan to apply for free undergraduate, graduate and doctoral programs. Applications are already being accepted. Hurry up! Details on nu.edu.kz",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 14,
+    "fields": {
+      "image": "Снимок_экрана_20221112_185127.png",
+      "title_ru": "Очередной очень насыщенный день позади!",
+      "title_en": "Another very busy day behind us!",
+      "description_ru": "NDC- это сетевая организация в Берлине, созданная более 20 лет назад и имеющая около 800 мультипликаторов по неформальному образованию, которые проводят тренинги для школьников и учителей по всей Германии на такие темы как, расизм, дискриминация, солидарность, права человека. У них отработанная система подготовки тренеров-мультипликаторов, которые проводят тренинги в школах начиная с 1-го класса. Так как опыт NDC признан успешным, они уже работают во Франции, Испании, Турции\r\nВ этот день мы также встретились с представителями организации Relex (Федеральная рабочая группа по экстремизму на религиозной почве), а также побывали в посольстве Кыргызстана в Берлине. О них мы расскажем подробнее в следующих постах.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "NDC is a network organization in Berlin, founded more than 20 years ago and has about 800 multipliers of non-formal education, which conducts trainings for pupils and teachers throughout Germany on topics such as racism, discrimination, solidarity, human rights. They have a well-established system of training multiplier trainers, who conduct trainings in schools starting from the 1st grade. Since the NDC experience is recognized as a success, they are already working in France, Spain, and Turkey.\r\nOn this day we also met with representatives of the organization Relex (Federal Working Group on Religious Extremism) and visited the Embassy of Kyrgyzstan in Berlin. We'll tell you more about them in the following posts.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 15,
+    "fields": {
+      "image": "Снимок_экрана_20221112_185315.png",
+      "title_ru": "Мы посетили школу Гумбольтайн и познакомились с медиаторами школы.",
+      "title_en": "We visited Gumboltine School and met the mediators of the school.",
+      "description_ru": "В третий день нашего визита, мы посетили школу Гумбольтайн и познакомились с медиаторами школы. В их школе есть 14 медиаторов из числа самих учеников и каждый день они, поделившись на 2-3 человек выполняют свои функции. Медиаторы-школьники вовлекаются в процесс медиации только по согласию сторон в случае, если между школьниками имели место быть издевательство, обзывание, высмеивание итд, но если между учащимися происходят более серьезные инциденты, например, как драка, избиение или травля, то в ситуацию вмешиваются уже взрослые медиаторы из числа учителей. Школьники рассказали, что данный подход помог им значительно снизить ссоры и конфликты среди учащихся. Во второй половине дня организация CAMINO презентовала нам лучшие практики в Берлине по профилактике правонарушений среди несовершеннолетних.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "On the third day of our visit, we visited Gumboltine School and met the mediators of the school. Their school has 14 mediators from among the students themselves and every day they, divided into 2-3 people, perform their functions. The student mediators are only involved by agreement if there has been scoffing, name-calling, taunting, etc., but if there are more serious incidents, such as fights, beatings or bullying, the adult teacher mediators intervene. Students reported that this approach helped them significantly reduce fighting and conflict among students. In the afternoon, CAMINO presented us with best practices in Berlin to prevent juvenile delinquency.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 16,
+    "fields": {
+      "image": "Снимок_экрана_20221112_185741.png",
+      "title_ru": "Во второй день программы обучающего визита, мы посетили школу имени Николы Теслы",
+      "title_en": "On the second day of the study visit program, we visited Nikola Tesla School",
+      "description_ru": "Во второй день программы обучающего визита, мы посетили школу имени Николы Теслы и ознакомились работой психологов и социальных педагогов по профилактике и разрешению конфликтов среди учащихся. Примечательно то что в школе обучаются дети говорящие на 24 разных языках. Нашим участникам было очень интересно узнать об их методологиях работы и условиях представленных школой для их работы и поделиться нашим опытом работы в Кыргызстане. А вот, что отметил в своем интервью Багышбек Райымбеков, представитель управления межэтнических отношения Министерства культуры, информации, спорта и молодежной политики КР о сегодняшнем нашем визите. \r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "On the second day of the study visit program, we visited Nikola Tesla School and got acquainted with the work of psychologists and social educators to prevent and resolve conflicts among students. It is noteworthy that the school is attended by children who speak 24 different languages. Our participants were very interested to learn about their methodologies and conditions presented by the school for their work and to share our experience in Kyrgyzstan. And here is what Bagyshbek Raiymbekov, representative of the department of interethnic relations of the Ministry of Culture, Information, Sports and Youth Policy of the Kyrgyz Republic said in his interview about our visit today.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 17,
+    "fields": {
+      "image": "Снимок_экрана_20221112_185854.png",
+      "title_ru": "У нас сегодня был очень насыщенный день в Берлине.",
+      "title_en": "We had a very busy day in Berlin today.",
+      "description_ru": "У нас сегодня был очень насыщенный день в Берлине. Мы получили много впечатлений, ознакомились с полезной и вдохновляющей работой немецких организаций со школьниками. В первой половине дня мы посетили Федеральное Агентство по гражданскому образованию, в ходе которой ознакомились с опытом работы по гражданскому просвещению школьников.\r\nВо второй половине дня, мы ознакомились с опытом по организации школьной медиации “Pax An”, где подготовленные из числа школьников медиаторы по принципу равный- равному проводят медиативные процессы со своими сверстниками.\r\nМы узнали о работе организации “Schüler Helfen Leben”, которая организует «День солидарных действий» уже почти 30 лет с участием более 60 тысяч учеников из более 600 школ Германии.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "We had a very busy day in Berlin today. We received a lot of impressions, got acquainted with useful and inspiring work of German organizations with schoolchildren. In the first half of the day we visited the Federal Agency for Civic Education, during which we learned about the experience of civic education of schoolchildren.\r\nIn the afternoon, we learned about the experience of the school mediation organization \"Pax An\", where trained school students conduct mediation processes with their peers.\r\nWe learned about the work of the organization \"Schüler Helfen Leben\", which has been organizing the \"Solidarity Action Day\" for almost 30 years with the participation of over 60,000 students from over 600 schools in Germany.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 18,
+    "fields": {
+      "image": "Снимок_экрана_20221112_190452.png",
+      "title_ru": "Команда IPD, координаторы и менторы школьных клубов мира Кыргызстана прибыли в Германию",
+      "title_en": "IPD team, coordinators and mentors of Kyrgyzstan's school peace clubs have arrived in Germany",
+      "description_ru": "Друзья! Команда IPD, координаторы и менторы школьных клубов мира Кыргызстана прибыли в Германию на обучающий тур в рамках проекта «Молодые миростроители». Всю неделю, мы будем делиться с интересными новостями из Берлина. Вместе с нами представители администрации президента КР и Министерства культуры, информации, спорта и молодежной политики КР. Следите за нашими новостями.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "Friends! IPD team, coordinators and mentors of Kyrgyzstan's school peace clubs have arrived in Germany for a study tour within the project “Young Peacbuilders”. All week long, we will be sharing interesting news from Berlin. Along with us are representatives from the Presidential Administration and the Ministry of Culture, Information, Sports and Youth Policy. Follow our news.\r\n>>>>\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 19,
+    "fields": {
+      "image": "news7.jpg",
+      "title_ru": "Клуб мира «Bridge» в партнерстве с Кара-Суйским городским кенешем организовали Фестиваль “Кыргыз жараны”",
+      "title_en": "The Bridge Peace Club in partnership with the Kara-Suu City Kenesh organized the Kyrgyz Jarany Festival",
+      "description_ru": "Клуб мира «Bridge» в партнерстве с Кара-Суйским городским кенешем организовали Фестиваль “Кыргыз жараны” с участием учащихся из 6 школ города Кара-Суу. В ходе фестиваля каждая школа представила свою творческую программу: концертные номера, выставки и театральные постановки, которых объединял общий посыл - Мы все разные, но мы едины! Организаторы Фестиваля отметили позитивную и креативную атмосферу мероприятия, в ходе которой у участников было много возможностей для общения и совместной работы.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "The Bridge Peace Club in partnership with the Kara-Suu City Kenesh organized the Kyrgyz Jarany Festival with the participation of students from six schools in Kara-Suu. During the festival, each school presented its creative program: concerts, exhibitions, and performances, which were united by a common message - We are all different, but we are united! The festival organizers noted the event's positive and creative atmosphere, during which the participants had many opportunities to communicate and work together.\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA (Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 20,
+    "fields": {
+      "image": "news8.jpg",
+      "title_ru": "Местные 2-х дневные семинары в рамках проекта \"Молодёжь за миграцию без рисков\" (октябрь-ноябрь)",
+      "title_en": "Local 2-day seminars within the project \"Youth for Migration Without Risks\" (October-November)",
+      "description_ru": "📌Местные 2-х дневные семинары в рамках проекта \"Молодёжь за миграцию без рисков\" (октябрь-ноябрь)\r\n\r\n📌Одними из первых семинар проведён в клубе 《Нурдан》\r\n🗓️8-9 октябрь . Семинар провели тренера-координаторы клуба, которые прошли полное обучение по безопасной миграции и симуляционной игре.\r\n\r\n📌На тренинге участники получили информацию по вопросам безопасной миграции и торговлей людьми, где был приглашён эксперт. Сыграли сим.игру 《Тана》 , при помощи которой были разработаны новые инициативы💡\r\n\r\nМероприятие проводится при поддержке проекта USAID \"Безопасная миграция в Центральной Азии\", реализуемый Winrock International",
+      "description_en": "📌Local 2-day seminars within the project \"Youth for Migration Without Risks\" (October-November)\r\n\r\n📌One of the first seminars was held in the club 《Nurdan》\r\n🗓️October 8-9. The seminar was conducted by the coaches-coordinators of the club, who were fully trained in safe migration and simulation game.\r\n\r\n📌At the training, participants received information on issues of safe migration and human trafficking, where an expert was invited. We played a 《Tana》 sim game, with the help of which new initiatives were developed💡\r\n______________________________\r\nThe event is supported by the USAID Safe Migration in Central Asia project implemented by Winrock International",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 21,
+    "fields": {
+      "image": "news9.jpg",
+      "title_ru": "Вчера прошла мотивационная встреча, приуроченная к Международному дню девочек.",
+      "title_en": "Yesterday held a motivational meeting on the occasion of the International Day of Girls.",
+      "description_ru": "Вчера в клубе мира «Достук» (Баткенский р-н) прошла мотивационная встреча, приуроченная к Международному дню девочек. Во встрече участвовала председатель местного кенеша Дарика Калыкова, которая рассказал участникам о правах девочек, поделилась своим опытом: как она успешно совмещает общественную активность, карьеру и семью.\r\nПроект осуществляется при финансовой поддержке ZIVIK Funding Programme Института международных отношений (IfA) на средства Федерального министерства иностранных дел Германии.",
+      "description_en": "Yesterday in the peace club \"Dostuk\" (Batken district) held a motivational meeting on the occasion of the International Day of Girls. The meeting was attended by the chairman of the local council Darika Kalykova, who told the participants about the rights of girls, shared her experience: how she successfully combines social activity, career and family.\r\n>>>>\r\nThe project implemented with the financial support of ZIVIK Funding Programme the IfA(Institut für Auslandsbeziehungen) with means from the German Federal Foreign Office.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.new",
+    "pk": 22,
+    "fields": {
+      "image": "news10.jpg",
+      "title_ru": "IPD приняла участие на встрече партнеров проекта USAID",
+      "title_en": "IPD took part in the meeting of USAID project partners",
+      "description_ru": "IPD приняла участие на встрече партнеров проекта USAID\r\n\r\n“Безопасная миграция в Центральной Азии” по Кыргызской Республике осуществляемый Винрок Интернейшнл.\r\n\r\nВ ходе встречи мы ознакомились с текущими и предстоящими инициативами партнеров проекта и презентовали наш проект «Молодежь за миграцию без рисков».",
+      "description_en": "IPD took part in the meeting of USAID project partners\r\n\r\n“Safe Migration in Central Asia” for the Kyrgyz Republic by Winrock International.\r\n\r\nDuring the meeting, we got acquainted with the current and upcoming initiatives of the project partners and presented our project “Youth for Risk-Free Migration”.",
+      "create_at": "2022-11-12"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 5,
+    "fields": {
+      "new": 5,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0xW1iyHMM1tAka6JCuStRKWPMFq3A8sArFhCzS4y9VPk4Qvo6UDj1VYCEDRq2xn67l"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 6,
+    "fields": {
+      "new": 6,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0yQepvCmpL6MFReMGUApKQhnjbmEGDXrnrQkqT5d3jmxRteAoZq494UqKfouHjFsWl"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 7,
+    "fields": {
+      "new": 7,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0DUzuR8gDV7iU6bEfogYz75LQYdv8QYoEU26HP5mb7TjAkPSfpdxmPaExa3tTR5Pml"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 8,
+    "fields": {
+      "new": 8,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid02g3JD2LZPn5srqr2HwpeEkEo6r4CtYYZVXg46jb6eGcoavTGTQCLhknUsLZSikEetl"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 9,
+    "fields": {
+      "new": 9,
+      "social": "facebook",
+      "link": "https://www.facebook.com/photo.php?fbid=490065099823531&set=pcb.490065356490172&type=3&theater"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 10,
+    "fields": {
+      "new": 10,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/556066016325542/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 11,
+    "fields": {
+      "new": 11,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0yhoGandLF7GpVwRM43KK9z8F4dTdZJL81z47gTsce6NAr17cbFg91bUbxQ4dsF27l"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 12,
+    "fields": {
+      "new": 12,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/574398197821603/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 13,
+    "fields": {
+      "new": 13,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0WGPWMWdU3PBAF723Ghs4Rdede53ir5tcyJX8b9FpRLr2s5WtZV26WRVAsksqZDn1l"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 14,
+    "fields": {
+      "new": 14,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/3265731820353034/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 15,
+    "fields": {
+      "new": 15,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/1209833812895804/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 16,
+    "fields": {
+      "new": 16,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/791082305528980/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 17,
+    "fields": {
+      "new": 17,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/1257999885051632/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 18,
+    "fields": {
+      "new": 18,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/videos/943314563207807/"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 19,
+    "fields": {
+      "new": 19,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid02AubeqRfGCkUsCXStJNfkCgkrFKGxj9wN6SWMAx6GM9KQk1AUfBo2iaY6aSE7fz6Kl"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 20,
+    "fields": {
+      "new": 20,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid02zmW2Q59qLgs6Lzb7CCJRmYn72opiXUr3vs1njcgbKpgbSEfzbaDy2fQLi8xaL98dl"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 21,
+    "fields": {
+      "new": 21,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0yH7k4z4GRzyMBvVEuTZW5i41C1sohDMFx7b8ZDZrggTZeou57PjzTwgTnm3jsmvil"
+    }
+  },
+  {
+    "model": "news.newsocial",
+    "pk": 22,
+    "fields": {
+      "new": 22,
+      "social": "facebook",
+      "link": "https://www.facebook.com/ipdKG/posts/pfbid0k1qjbPhnzpHmx5FgzQ2jWmfmszSRWaiqXQiQqRa2hDX2F7QjSpk8X3es4qSJh3X8l"
+    }
+  }
+]

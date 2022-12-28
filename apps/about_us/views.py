@@ -2,17 +2,21 @@ import logging
 
 from rest_framework import generics
 
-from apps.about_us.models import AboutUs
-from apps.about_us.serialziers import AboutUsSerializer
+from apps.about_us import models, serialziers
 
 logger = logging.getLogger('django')
 
 
 class AboutUsApiView(generics.ListAPIView):
-    queryset = AboutUs.objects.all()
-    serializer_class = AboutUsSerializer
+    queryset = models.AboutUs.objects.all()
+    serializer_class = serialziers.AboutUsSerializer
 
-    def get(self, request, *args, **kwargs):
-        print(request.method)
-        logger.info(request.method)
-        return self.list(request, *args, **kwargs)
+
+class AboutPartnersApiViewSet(generics.ListAPIView):
+    queryset = models.AboutPartners.objects.all()
+    serializer_class = serialziers.AboutPartnersSerializer
+
+
+class AboutTeamApiViewSet(generics.ListAPIView):
+    queryset = models.AboutTeam.objects.all()
+    serializer_class = serialziers.AboutTeamSerializer

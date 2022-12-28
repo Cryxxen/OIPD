@@ -1,0 +1,62 @@
+[
+  {
+    "model": "categories.category",
+    "pk": 1,
+    "fields": {
+      "title_ru": "Новости",
+      "title_en": "News",
+      "create_at": "2022-11-07",
+      "is_active": true,
+      "ordering": 1,
+      "route": "/news"
+    }
+  },
+  {
+    "model": "categories.category",
+    "pk": 2,
+    "fields": {
+      "title_ru": "Наши Сервисы",
+      "title_en": "Our Services",
+      "create_at": "2022-11-07",
+      "is_active": true,
+      "ordering": 2,
+      "route": "/services"
+    }
+  },
+  {
+    "model": "categories.category",
+    "pk": 3,
+    "fields": {
+      "title_ru": "Деятельности",
+      "title_en": "Acitvities",
+      "create_at": "2022-11-07",
+      "is_active": true,
+      "ordering": 3,
+      "route": "/activities"
+    }
+  },
+  {
+    "model": "categories.category",
+    "pk": 4,
+    "fields": {
+      "title_ru": "О нас",
+      "title_en": "About us",
+      "create_at": "2022-11-07",
+      "is_active": true,
+      "ordering": 4,
+      "route": "/about"
+    }
+  },
+  {
+    "model": "categories.category",
+    "pk": 5,
+    "fields": {
+      "title_ru": "Контакты",
+      "title_en": "Contacts",
+      "create_at": "2022-11-07",
+      "is_active": true,
+      "ordering": 5,
+      "route": "/contacts"
+    }
+  }
+]
